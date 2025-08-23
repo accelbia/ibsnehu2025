@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --theme-color: #7ca559;       /* Theme color */
+  --dark-header: #808285;       /* Dark header */
+  --light-header: #a6a6a6;      /* 0,0,0 at 35% opacity over white */
+  --text-color: #333333;        /* Body text */
+  --background-color: #FAF7F0;  /* Light cream */
+
+  --section-font: 'EB Garamond', serif; /* Font for section titles */
+  --heading-font: 'Inter', sans-serif; /* Font for headings */
+}
+
+/* Debug */
+/* * {
+  outline: 1px solid red;
+}
+ */
+/* .section{
+  outline: 1px solid blue;
+} */
+
+body{
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: var(--background-color);
+  font-size: small;
+  position: absolute;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  /* When space insufficient, dont break the words */
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200; /* Extra Light */
+  font-size: 28pt;
+  color: var(--dark-header);
+  word-break: normal;
+  text-transform: uppercase; /* All caps */
+
+  @media screen and (max-width: 600px) {
+    font-size: 24pt;
+  }
+}
+
+.title h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400; /* Regular */
+  font-size: 18pt;
+  line-height: 1;
+  color: var(--dark-header);
+  text-transform: uppercase; /* All caps */
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 14pt;
+  color: var(--light-header);
+  text-transform: uppercase; /* All caps */
+  margin-top: 1.2em;
+}
+
+h2.title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    margin-top: 1.2em;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 9pt;
+  color: var(--theme-color);
+}
+
+ul {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 12pt;
+  color: var(--theme-color);
+  list-style-type: none;
+  text-decoration: none;
+  flex-direction: row;
+  display: flex;
+  gap: 2em;
+  padding-right: 2em;
+}
+
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  margin-bottom: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.2;
+  letter-spacing: -0.03em; 
+}
+
+a {
+  color: var(--theme-color);
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--theme-color);
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: var(--dark-header);
+}
+
+
+strong {
+  font-weight: 500;
+}
+
+.caption{
+  font-family: 'Inter', sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 9pt;
+  color: var(--light-header);
+  text-align:start;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */  
+}
+
+
+.fullscreen-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 99; /* Behind the invitation letter */
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,224 @@
+{
+    "OFFICE BEARERS OF THE INDIAN BOTANICAL SOCIETY": {
+        "President": "Prof. S. K. Barik",
+        "Vice President": "Prof. Jitender Singh",
+        "Executive and Managing Editor": "Prof. Y. Vimala",
+        "Chief Editors": "Prof. A. K. Pandey & Prof. S. S. Sharma",
+        "Secretary": "Prof. Seshu Lavania",
+        "Treasurer": "Prof. Alok Srivastava"
+    },
+    "ORGANIZING COMMITTEE": {
+        "Patron": "Prof. Sumarbin Umdor, Pro-Vice Chancellor, NEHU",
+        "Chairperson": "Dean, School of Life Sciences, NEHU",
+        "Organizing Secretary": "Prof. Suman Kumaria",
+        "Co-organizing Secretary": "Prof. Shanta Ram Joshi",
+        "Treasurer": "Dr. Meera Chhetri Das"
+    },
+    "NATIONAL ADVISORY COMMITTEE": [
+        {
+            "Name": "Prof. A. K. Koul",
+            "City": "Jammu"
+        },
+        {
+            "Name": "Prof. K. R. Shivanna",
+            "City": "Bengaluru"
+        },
+        {
+            "Name": "Prof. R. R. Rao",
+            "City": "Bengaluru"
+        },
+        {
+            "Name": "Prof. Pramod Tandon",
+            "City": "Lucknow"
+        },
+        {
+            "Name": "Dr. A. A. Mao",
+            "City": "Kolkata"
+        },
+        {
+            "Name": "Dr. P. K. Trivedi",
+            "City": "Lucknow"
+        },
+        {
+            "Name": "Prof. C. Manoharachary",
+            "City": "Hyderabad"
+        },
+        {
+            "Name": "Prof. M. Sabu",
+            "City": "Kozhikode"
+        },
+        {
+            "Name": "Prof. R. K. Kohli",
+            "City": "Chandigarh"
+        },
+        {
+            "Name": "Prof. S. M. Reddy",
+            "City": "Warangal"
+        },
+        {
+            "Name": "Dr. V. M. Tiwari",
+            "City": "Jorhat"
+        },
+        {
+            "Name": "Prof. Sudhir Sopori",
+            "City": "Delhi"
+        },
+        {
+            "Name": "Dr. Ajit Kumar Shasany",
+            "City": "Lucknow"
+        },
+        {
+            "Name": "Prof. Akhilesh Tyagi",
+            "City": "Delhi"
+        },
+        {
+            "Name": "Prof. Ashwani Kumar",
+            "City": "Jaipur"
+        },
+        {
+            "Name": "Prof. Sanjay Kumar",
+            "City": "Palampur"
+        },
+        {
+            "Name": "Prof. Arun K Pandey",
+            "City": "Bhopal"
+        },
+        {
+            "Name": "Prof. U. C. Lavania",
+            "City": "Lucknow"
+        },
+        {
+            "Name": "Prof. P. C. Trivedi",
+            "City": "Jaipur"
+        },
+        {
+            "Name": "Prof. D. K. Maheshwari",
+            "City": "Haridwar"
+        },
+        {
+            "Name": "Prof. V. P. Singh",
+            "City": "Bareilly"
+        },
+        {
+            "Name": "Prof. C. R. Babu",
+            "City": "Delhi"
+        },
+        {
+            "Name": "Prof. Shanti S. Sharma",
+            "City": "Sikkim"
+        },
+        {
+            "Name": "Prof. J. I. S. Khattar",
+            "City": "Patiala"
+        },
+        {
+            "Name": "Prof. M. V. Rajam",
+            "City": "Delhi"
+        },
+        {
+            "Name": "Dr. M. Sanjappa",
+            "City": "Bengaluru"
+        },
+        {
+            "Name": "Prof. S. R. Yadav",
+            "City": "Kolhapur"
+        },
+        {
+            "Name": "Dr. Eklavya Sharma",
+            "City": "Siliguri"
+        }
+    ],
+    "LOCAL ORGANIZING COMMITTEE": [
+        {
+            "Name": "Prof. S. K. Barik"
+        },
+        {
+            "Name": "Prof. Uma Shankar"
+        },
+        {
+            "Name": "Prof. H. Kayang"
+        },
+        {
+            "Name": "Prof. Suman Kumaria"
+        },
+        {
+            "Name": "Dr. Meera C. Das"
+        },
+        {
+            "Name": "Prof. A. K. Singh"
+        },
+        {
+            "Name": "Prof. M. B. Syiem"
+        },
+        {
+            "Name": "Prof. L. Kma"
+        },
+        {
+            "Name": "Prof. K. Suchiang"
+        },
+        {
+            "Name": "Dr. Surya Bhan"
+        },
+        {
+            "Name": "Dr. Harish Shukla"
+        },
+        {
+            "Name": "Dr. Rajesh Bajpai"
+        },
+        {
+            "Name": "Dr. Krishna Upadhaya"
+        },
+        {
+            "Name": "Dr. Hiranjit Choudhury"
+        },
+        {
+            "Name": "Dr. Arvind Kumar"
+        },
+        {
+            "Name": "Prof. K. Aguan"
+        },
+        {
+            "Name": "Prof. S. R. Joshi"
+        },
+        {
+            "Name": "Dr. S. Majaw"
+        },
+        {
+            "Name": "Dr. Atanu Bhattacharjee"
+        },
+        {
+            "Name": "Dr. Neha Chaurasia"
+        },
+        {
+            "Name": "Prof. A. K. Yadav"
+        },
+        {
+            "Name": "Prof. S. R. Hajong"
+        },
+        {
+            "Name": "Prof. Srimoyee Ghosh"
+        },
+        {
+            "Name": "Prof. T. Tripathi"
+        },
+        {
+            "Name": "Prof. Devendra K. Biswal"
+        },
+        {
+            "Name": "Dr. Bidyadhar Das"
+        },
+        {
+            "Name": "Dr. S. S. Chaturvedi"
+        }
+    ],
+    "CONTACT PERSON": {
+        "Name": "Prof. Suman Kumaria",
+        "Role": "Organizing Secretary, All India Botanical Conference 2025",
+        "Department": "Department of Botany",
+        "Institution": "North-Eastern Hill University",
+        "City": "Shillong",
+        "Postal Code": "793022",
+        "Phone": "+91 9863068044",
+        "Email": "aibcshillong25@gmail.com"
+    }
+}

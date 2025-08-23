@@ -1,0 +1,133 @@
+.section{
+    height: 100vh;
+    padding-top: 100px; /* Adjusted to account for header height */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.landing-content {
+    max-width: 900px;
+    width: 100%; /* Optional: Ensures it doesn't exceed the max-width */
+}
+
+a[type="button"] {
+    width: fit-content;
+    padding: 0.6em 1.2em;
+    position: absolute;
+    bottom: 40px;
+}
+
+.title-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.landing-title h1{
+    font-size: 2.5rem;
+    font-family: var(--section-font);
+}
+
+.countdown{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.seconds-remaining{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#obc ul {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+    gap: 0em;
+    /* no left margin */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#obc p{
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+#obc h3{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+#obc .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#obc .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+#obc .tabular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4em;
+}
+
+@media screen and (max-width: 1200px) {
+    .landing-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .landing-content{
+        font-size: 0.8rem;
+    }
+
+    .countdown {
+        font-size: 1.5rem;
+    }
+
+    .seconds-remaining {
+        font-size: 1.2rem;
+    }
+
+    #obc h3 {
+        font-size: 10px;
+    }
+
+    #obc .tabular {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+}

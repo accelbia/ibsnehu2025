@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.7 441.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #858789;
+        font-family: TimesNewRomanPSMT, 'Times New Roman';
+        font-size: 148.01px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.08em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.6 270.58)"><tspan x="0" y="0">X</tspan><tspan class="cls-2" x="106.89" y="0">L</tspan><tspan x="185.75" y="0">VIII</tspan></text>
+</svg>
