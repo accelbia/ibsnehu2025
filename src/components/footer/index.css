@@ -33,4 +33,13 @@ footer{
         display: none;
     }
     
+    .left {
+        gap: 1em;
+        font-size: 0.8em;
+    }
+
+    .left img {
+        width: 40px;
+        height: 40px;
+    }
 }

@@ -2,6 +2,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 import './index.css';
+import FsMenu from './fs-menu';
 
 interface HeaderProps {
   displayInvitation: boolean;
@@ -12,6 +13,9 @@ interface HeaderProps {
 
   displayOfficeBearers: boolean;
   setDisplayOfficeBearers: (value: boolean) => void;
+
+  displayMenu: boolean;
+  setDisplayMenu: (value: boolean) => void;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -21,6 +25,8 @@ const Header: React.FC<HeaderProps> = ({
   setDisplayMembershipAndFellowship,
   displayOfficeBearers,
   setDisplayOfficeBearers,
+  displayMenu,
+  setDisplayMenu
 }) => {
 
   return (
@@ -39,17 +45,37 @@ const Header: React.FC<HeaderProps> = ({
 
       <nav>
         <ul>
-          <li><a onClick={() => setDisplayInvitation(!displayInvitation)}>Invitation Letter</a></li>
+          <li><a onClick={() => {
+            setDisplayInvitation(!displayInvitation)
+            }}>Invitation Letter</a></li>
           <li><a onClick={() => setDisplayMembershipAndFellowship(!displayMembershipAndFellowship)}>Membership and Fellowship</a></li>
           <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Office Bearers</a></li>
+          <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Distinguished Speakers</a></li>
         </ul>
         <a className="button" href="https://register.ibsnehu2025.org/" target='_blank'>Register<LaunchIcon /></a>
       </nav>
 
 
-      <IconButton className="menu-button mobile">
+      <IconButton
+        className="menu-button mobile"
+        onClick={() => setDisplayMenu(!displayMenu)}
+        aria-label="menu"
+      >
         <MenuIcon />
       </IconButton>
+
+      
+
+      <FsMenu
+        displayMenu={displayMenu}
+        setDisplayMenu={setDisplayMenu}
+        displayInvitation={displayInvitation}
+        setDisplayInvitation={setDisplayInvitation}
+        displayMembershipAndFellowship={displayMembershipAndFellowship}
+        setDisplayMembershipAndFellowship={setDisplayMembershipAndFellowship}
+        displayOfficeBearers={displayOfficeBearers}
+        setDisplayOfficeBearers={setDisplayOfficeBearers}
+      />
     </header>
   );
 };
