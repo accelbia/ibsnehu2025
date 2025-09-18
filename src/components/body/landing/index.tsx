@@ -6,12 +6,12 @@ const Landing: React.FC = () => {
   const [secondsRemaining, setSecondsRemaining] = useState<string>('');
 
   const countDownToConference = () => {
-    const conferenceDate = new Date('2025-08-31T09:00:00');
-    const conferenceEndDate = new Date('2025-10-31T17:00:00');
+    const conferenceDate = new Date('2025-10-30T09:00:00');
+    const conferenceEndDate = new Date('2025-11-01T17:00:00');
     const now = new Date();
 
     if (now > conferenceEndDate) {
-      return ['Conference has ended', ''];
+      return ['Conference has ended', 'We look forward to seeing you next year!'];
     }
     if (now >= conferenceDate && now <= conferenceEndDate) {
       return [`Conference is ongoing, till ${conferenceEndDate.toLocaleDateString()}`, ''];
@@ -23,7 +23,7 @@ const Landing: React.FC = () => {
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    return [`${days} days ${hours} hours ${minutes} minutes`, `${seconds} seconds remaining till paper/abstract submission`];
+    return [`${days} days ${hours} hours ${minutes} minutes`, `${seconds} seconds remaining till conference `];
   };
 
   useEffect(() => {
@@ -55,7 +55,9 @@ const Landing: React.FC = () => {
       </div>
       <span className="countdown">{timeRemaining}</span>
       <span className="seconds-remaining">{secondsRemaining}</span>
-      <h2>Paper/Abstract submission deadline: <strong>31st March 2025</strong></h2>
+      <h2 style={
+        {color: 'rgb(108, 108, 108)'}
+      }>Paper/Abstract submission deadline closed on <span style={{color: 'rgba(255, 70, 70, 0.8)'}}>31st August 2025</span></h2>
       <a
         type="button"
         className="button"

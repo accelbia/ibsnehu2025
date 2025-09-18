@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({
             }}>Invitation Letter</a></li>
           <li><a onClick={() => setDisplayMembershipAndFellowship(!displayMembershipAndFellowship)}>Membership and Fellowship</a></li>
           <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Office Bearers</a></li>
-          <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Distinguished Speakers</a></li>
+          {/* <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Distinguished Speakers</a></li> */}
         </ul>
         <a className="button" href="https://register.ibsnehu2025.org/" target='_blank'>Register<LaunchIcon /></a>
       </nav>

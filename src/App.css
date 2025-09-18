@@ -43,7 +43,7 @@ nav {
 }
 
 h4, h5, h6 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', Times, serif;
   font-weight: 400;
   color: var(--text-color);
   margin-top: 1.2em;
@@ -58,7 +58,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
   font-weight: 200; /* Extra Light */
   font-size: 28pt;
   color: var(--dark-header);
@@ -71,7 +71,7 @@ h1 {
 }
 
 .title h1 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', Times, serif;
   font-weight: 400; /* Regular */
   font-size: 18pt;
   line-height: 1;
@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', Times, serif;
   font-weight: 400;
   font-size: 14pt;
   color: var(--light-header);
@@ -89,7 +89,7 @@ h2 {
 }
 
 h2.title {
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond', Times, serif;
     font-weight: 400;
     font-size: 14pt;
     color: var(--theme-color);
@@ -98,14 +98,14 @@ h2.title {
 }
 
 h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
   font-weight: 300; /* Light */
   font-size: 9pt;
   color: var(--theme-color);
 }
 
 ul {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
   font-weight: 300; /* Light */
   list-style-type: none;
   text-decoration: none;
@@ -117,7 +117,7 @@ ul {
 
 
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
   font-weight: 300;
   margin-bottom: 1em;
   text-align: justify;
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
   background-color: var(--theme-color);
   color: white;
   padding: 0.6em 1.2em;
@@ -159,7 +159,7 @@ strong {
 }
 
 .caption{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
   font-weight: 300; /* Light */
   font-size: 9pt;
   color: var(--light-header);
