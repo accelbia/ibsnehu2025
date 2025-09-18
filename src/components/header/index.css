@@ -1,69 +1,73 @@
 header {
-    display: flex;
-    box-sizing: border-box; 
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    padding: 10px 20px;
-    z-index: 10; /* Ensure it stays above other elements */
-    background: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
-    backdrop-filter: blur(4px); /* Apply background blur */
-    -webkit-backdrop-filter: blur(4px); /* For Safari support */
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  z-index: 10; /* Ensure it stays above other elements */
+  background: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
+  backdrop-filter: blur(4px); /* Apply background blur */
+  -webkit-backdrop-filter: blur(4px); /* For Safari support */
 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.title p{
-    margin: 0;
-    font-size: 0.8rem;
+.title p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
-nav a.button{
-    margin-right: 20px;
-    cursor: pointer;
+nav a.button {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+a.navButton {
+  font-weight: 500;
 }
 
 .menu-button {
-    display: none !important;
-    width: 40px !important;
-    height: 40px !important;
-    background-color: transparent !important;
-    color: #000 !important;
+  display: none !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: transparent !important;
+  color: #000 !important;
 
-    transform: translateY(-50%) !important;
-    position: absolute !important;
-    top: 20px !important;
-    right: 20px !important;
-    z-index: 11 !important;
-    border: none !important;
-    box-shadow: none !important;
+  transform: translateY(-50%) !important;
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 11 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .desktop {
-    display: block;
+  display: block;
 }
 
 /* in 1200 width, disable nav */
 @media (max-width: 1200px) {
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .mobile {
-        display: block;
-    }
+  .mobile {
+    display: block;
+  }
 
-    .desktop {
-        display: none;
-    }
+  .desktop {
+    display: none;
+  }
 
-    .menu-button {
-        display: block !important;
-    }
+  .menu-button {
+    display: block !important;
+  }
 }

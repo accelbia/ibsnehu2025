@@ -1,35 +1,35 @@
-.scientific-programmes{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.scientific-programmes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
-    color: var(--dark-header);
+  color: var(--dark-header);
 }
 
 .scientific-programmes ul {
-    list-style-type: none;
-    padding-left: 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    letter-spacing: -0.03em;
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  letter-spacing: -0.03em;
 }
 
-.medal-lectures{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    margin-bottom: 2em;
+.medal-lectures {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-bottom: 2em;
 }
 
-.recipients{
-    color: var(--theme-color);
+.recipients {
+  color: var(--theme-color);
 }
 
 @media screen and (max-width: 767px) {
-    .scientific-programmes{
-        gap: 0.5em;
-        font-size: 0.8rem;
-    }
+  .scientific-programmes {
+    gap: 0.5em;
+    font-size: 0.8rem;
+  }
 }

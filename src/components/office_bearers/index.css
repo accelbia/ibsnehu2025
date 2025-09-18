@@ -1,76 +1,74 @@
-.member-l1, .member-l2{
-    font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
-    letter-spacing: -0.03em;
+.member-l1,
+.member-l2 {
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
+  letter-spacing: -0.03em;
 }
 
-.member-l1{
-    margin-bottom: 12px;
+.member-l1 {
+  margin-bottom: 12px;
 }
 
-.member-l1 .subkey{
-    font-weight: 600;
-    font-size: 12px;
-    color: var(--theme-color);
+.member-l1 .subkey {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--theme-color);
 }
 
-.member-l2 .subvalueName{
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--text-color);
+.member-l2 .subvalueName {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
 }
 
-.member-l2 .subvalueCity{
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--light-header);
+.member-l2 .subvalueCity {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-header);
 }
 
-.member-l2 .subkey{
-    font-weight: 600;
-    font-size: 12px;
-    color: var(--theme-color);
-    letter-spacing: -0.03em;
-    margin-top: 8px;
+.member-l2 .subkey {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--theme-color);
+  letter-spacing: -0.03em;
+  margin-top: 8px;
 }
 
-.member-l2 .subvalue{
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--text-color);
-    letter-spacing: -0.03em;
+.member-l2 .subvalue {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+  letter-spacing: -0.03em;
 }
 
-
-
-.memberList{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 16px;
-    width: 100%;
-    padding: 20px;
-    align-items: center;
+.memberList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
 }
 
 .chairPeople {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
 }
 .otherMembers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
 
-    @media screen and (max-width: 870px) {
-        max-width: 300px;
-        min-width: 250px;
-        
-    }
+  @media screen and (max-width: 870px) {
+    max-width: 300px;
+    min-width: 250px;
+  }
 }

@@ -16,6 +16,9 @@ interface HeaderProps {
 
   displayMenu: boolean;
   setDisplayMenu: (value: boolean) => void;
+
+  displayTimeline: boolean; // New prop for Timeline visibility
+  setDisplayTimeline: (value: boolean) => void; // New prop for Timeline visibility
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -26,45 +29,98 @@ const Header: React.FC<HeaderProps> = ({
   displayOfficeBearers,
   setDisplayOfficeBearers,
   displayMenu,
-  setDisplayMenu
+  setDisplayMenu,
+  displayTimeline,
+  setDisplayTimeline,
 }) => {
-
   return (
     <header>
-      <div className="title desktop">
-        <h1>XLVIII ALL INDIA BOTANICAL CONFERENCE <span style={
-          { fontStyle: 'italic', textTransform: 'lowercase' }
-        }>of</span><br />THE INDIAN BOTANICAL SOCIETY<br />
+      <div className='title desktop'>
+        <h1>
+          XLVIII ALL INDIA BOTANICAL CONFERENCE{' '}
+          <span
+            style={{
+              fontStyle: 'italic',
+              textTransform: 'lowercase',
+            }}
+          >
+            of
+          </span>
+          <br />
+          THE INDIAN BOTANICAL SOCIETY
+          <br />
         </h1>
-        <p>& International Symposium on Biology and Biotechnology of Plant Diversity for Bioeconomy</p>
+        <p>
+          And International Symposium on Biology and Biotechnology of Plant
+          Diversity for Bioeconomy
+        </p>
       </div>
 
-      <div className="title mobile">
-        <h1>XLVIII AIBC <span style={{ fontStyle: 'italic', textTransform: 'lowercase' }}>of</span> IBS</h1>
+      <div className='title mobile'>
+        <h1>
+          XLVIII AIBC{' '}
+          <span
+            style={{
+              fontStyle: 'italic',
+              textTransform: 'lowercase',
+            }}
+          >
+            of
+          </span>{' '}
+          IBS
+        </h1>
       </div>
 
       <nav>
         <ul>
-          <li><a onClick={() => {
-            setDisplayInvitation(!displayInvitation)
-            }}>Invitation Letter</a></li>
-          <li><a onClick={() => setDisplayMembershipAndFellowship(!displayMembershipAndFellowship)}>Membership and Fellowship</a></li>
-          <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Office Bearers</a></li>
-          {/* <li><a onClick={() => setDisplayOfficeBearers(!displayOfficeBearers)}>Distinguished Speakers</a></li> */}
+          <li>
+            <a
+              className='navButton'
+              onClick={() => {
+                setDisplayInvitation(!displayInvitation);
+              }}
+            >
+              Invitation Letter
+            </a>
+          </li>
+          <li>
+            <a
+              className='navButton'
+              onClick={() =>
+                setDisplayMembershipAndFellowship(
+                  !displayMembershipAndFellowship,
+                )
+              }
+            >
+              Membership and Fellowship
+            </a>
+          </li>
+          <li>
+            <a
+              className='navButton'
+              onClick={() => setDisplayTimeline(!displayTimeline)}
+            >
+              Pre and Post Conference Events
+            </a>
+          </li>
         </ul>
-        <a className="button" href="https://register.ibsnehu2025.org/" target='_blank'>Register<LaunchIcon /></a>
+        <a
+          className='button'
+          href='https://register.ibsnehu2025.org/'
+          target='_blank'
+        >
+          Register
+          <LaunchIcon />
+        </a>
       </nav>
 
-
       <IconButton
-        className="menu-button mobile"
+        className='menu-button mobile'
         onClick={() => setDisplayMenu(!displayMenu)}
-        aria-label="menu"
+        aria-label='menu'
       >
         <MenuIcon />
       </IconButton>
-
-      
 
       <FsMenu
         displayMenu={displayMenu}
@@ -75,6 +131,8 @@ const Header: React.FC<HeaderProps> = ({
         setDisplayMembershipAndFellowship={setDisplayMembershipAndFellowship}
         displayOfficeBearers={displayOfficeBearers}
         setDisplayOfficeBearers={setDisplayOfficeBearers}
+        displayTimeline={displayTimeline}
+        setDisplayTimeline={setDisplayTimeline}
       />
     </header>
   );

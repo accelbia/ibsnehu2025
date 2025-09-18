@@ -3,7 +3,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './index.css';
 
-
 import Landing from './landing';
 // import Dsdotc from './dsdotc';
 import Schedule from './schedule';
@@ -34,28 +33,28 @@ const Body: React.FC = () => {
               end: 'bottom 20%',
               toggleActions: 'play none none none',
             },
-          }
+          },
         );
       });
     }
   }, []);
   return (
-    <div className="body">
-      <div className="container">
-        <div className="section" id='landing' ref={sectionRef}>
+    <div className='body'>
+      <div className='container'>
+        <div className='section' id='landing' ref={sectionRef}>
           <Landing />
         </div>
 
-        <div className="section" id="schedule" ref={sectionRef}>
+        <div className='section' id='schedule' ref={sectionRef}>
           <Schedule />
         </div>
 
-        <div className="section" id="scientificprogrammes" ref={sectionRef}>
-        <ScientificProgrammes />
+        <div className='section' id='scientificprogrammes' ref={sectionRef}>
+          <ScientificProgrammes />
         </div>
 
         {/* <div className="section" id="dsdotc" ref={el => { if (el) columnsRef.current[0] = el; }}> */}
-          {/* <Dsdotc /> */}
+        {/* <Dsdotc /> */}
         {/* </div> */}
       </div>
     </div>
