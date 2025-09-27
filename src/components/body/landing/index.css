@@ -1,0 +1,19 @@
+.title-nav {
+  display: flex;
+  margin-top: 20px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.coming-soon-header {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: var(--theme-color);
+  opacity: 0.6;
+}
+
+.coming-soon-header::after {
+  content: '- Coming Soon';
+}

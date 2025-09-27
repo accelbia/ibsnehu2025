@@ -1,0 +1,74 @@
+.faq-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.faq-links-container > * {
+  flex: 1 1 50%;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.link-item {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+.link-item.coming-soon .link {
+  color: lightgray;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.link-item.coming-soon .link::after {
+  content: '- Coming Soon';
+  color: lightgray;
+}
+
+.link-item.coming-soon:hover {
+  transform: none;
+}
+
+.link-item:hover {
+  transform: translate(5px, 0);
+}
+
+.faq-question {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: var(--theme-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.faq-registration-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the max-width as needed */
+  .faq-links-container {
+    flex-direction: column;
+  }
+}

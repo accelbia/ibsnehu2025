@@ -1,7 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import TimelineModal from '../timeline'; // Import the Timeline component
+import TimelineModal from '../../header/timeline'; // Import the Timeline component
+import './index.css';
 
-const Landing: React.FC = () => {
+interface LandingProps {
+  setBodyVariant: React.Dispatch<
+    React.SetStateAction<'home' | 'scientific-programmes' | 'distinguished-speakers'>
+  >;
+}
+
+const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [timeRemaining, setTimeRemaining] = useState<string>('');
   const [secondsRemaining, setSecondsRemaining] = useState<string>('');
@@ -13,26 +20,16 @@ const Landing: React.FC = () => {
     const now = new Date();
 
     if (now > conferenceEndDate) {
-      return [
-        'Conference has ended',
-        'We look forward to seeing you next year!',
-      ];
+      return ['Conference has ended', 'We look forward to seeing you next year!'];
     }
     if (now >= conferenceDate && now <= conferenceEndDate) {
-      return [
-        `Conference is ongoing, till ${conferenceEndDate.toLocaleDateString()}`,
-        '',
-      ];
+      return [`Conference is ongoing, till ${conferenceEndDate.toLocaleDateString()}`, ''];
     }
 
     const timeDifference = conferenceDate.getTime() - now.getTime();
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-    );
-    const minutes = Math.floor(
-      (timeDifference % (1000 * 60 * 60)) / (1000 * 60),
-    );
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
     return [
@@ -81,39 +78,26 @@ const Landing: React.FC = () => {
           marginBottom: '20px',
         }}
       >
-        International Symposium on Biology and Biotechnology of Plant Diversity
-        for Bioeconomy
+        International Symposium on Biology and Biotechnology of Plant Diversity for Bioeconomy
       </p>
       <div className='title-nav'>
-        <a href='#schedule'>Conference Sections</a>
-        <a href='#scientificprogrammes'>Scientific Programmes</a>
+        <a href='#distinguished-speakers' onClick={() => setBodyVariant('distinguished-speakers')}>
+          Distinguished Speakers
+        </a>
         <a
-          href='https://forms.cloud.microsoft/r/QZYECrUeb6'
-          target='_blank'
-          rel='noopener noreferrer'
+          href='#program-schedule'
+          onClick={() => setIsTimelineVisible(true)}
+          className='coming-soon-header'
         >
-          Life Science Golden Jubilee Delegate Registration
+          Detailed Program Schedule
         </a>
-        <a href='#office-bearers'>
-          IBS Office Bearers and Organizing Committee
-        </a>
-        <a href='#program-schedule'>Program Schedule</a>
-        <a href='#sight-seeing'>Sight Seeing Arrangement</a>
-        <a href='#distinguished-speakers'>Distinguished Speakers</a>
-        <a href='#travel-arrangement'>Contact Us</a>
       </div>
       <span className='countdown'>{timeRemaining}</span>
       <span className='seconds-remaining'>{secondsRemaining}</span>
-      <h2 style={{ color: 'rgb(108, 108, 108)' }}>
-        Paper/Abstract submission deadline closed on{' '}
-        <span style={{ color: 'rgba(255, 70, 70, 0.8)' }}>
-          31st August 2025
-        </span>
-      </h2>
       <a
         type='button'
         className='button'
-        href='https://register.ibsnehu2025.org/'
+        href='https://forms.cloud.microsoft/r/G8UMm1RdEx'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -121,10 +105,7 @@ const Landing: React.FC = () => {
       </a>
 
       {/* Render the Timeline modal */}
-      <TimelineModal
-        isVisible={isTimelineVisible}
-        setIsVisible={setIsTimelineVisible}
-      />
+      <TimelineModal isVisible={isTimelineVisible} setIsVisible={setIsTimelineVisible} />
     </div>
   );
 };

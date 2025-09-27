@@ -1,12 +1,16 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './index.css';
 
 import Landing from './landing';
-// import Dsdotc from './dsdotc';
-import Schedule from './schedule';
 import ScientificProgrammes from './scientific-programmes';
+import Sections from './sections';
+import FAQsLinks from './faqs-links';
+import OfficeBearers from './office_bearers';
+import DistinguishedSpeakers from './distinguished-speakers';
+import Fellowship from './fellowship';
+import GoldenJubileeLetter from './lifesciences-golden-jubilee-registration';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +18,12 @@ const Body: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const columnsRef = useRef<HTMLDivElement[]>([]);
 
+  const [bodyVariant, setBodyVariant] = React.useState<
+    'home' | 'scientific-programmes' | 'distinguished-speakers'
+  >('home');
+  const [displayOfficeBearers, setDisplayOfficeBearers] = useState(false);
+  const [displayFellowship, setDisplayFellowship] = useState(false);
+  const [displayGoldenJubileeLetter, setDisplayGoldenJubileeLetter] = useState(false);
   useEffect(() => {
     if (sectionRef.current) {
       const columns = columnsRef.current;
@@ -38,24 +48,58 @@ const Body: React.FC = () => {
       });
     }
   }, []);
+
   return (
     <div className='body'>
       <div className='container'>
-        <div className='section' id='landing' ref={sectionRef}>
-          <Landing />
-        </div>
+        {bodyVariant === 'home' && (
+          <>
+            <div className='section' id='landing' ref={sectionRef}>
+              <Landing setBodyVariant={setBodyVariant} />
+            </div>
 
-        <div className='section' id='schedule' ref={sectionRef}>
-          <Schedule />
-        </div>
+            <div className='section' id='sections' ref={sectionRef}>
+              <Sections />
+            </div>
 
-        <div className='section' id='scientificprogrammes' ref={sectionRef}>
-          <ScientificProgrammes />
-        </div>
+            <div className='section' id='faqs' ref={sectionRef}>
+              <FAQsLinks
+                setBodyVariant={setBodyVariant}
+                setDisplayOfficeBearers={setDisplayOfficeBearers}
+                setDisplayFellowship={setDisplayFellowship}
+                setDisplayGoldenJubileeLetter={setDisplayGoldenJubileeLetter}
+              />
+            </div>
+          </>
+        )}
 
-        {/* <div className="section" id="dsdotc" ref={el => { if (el) columnsRef.current[0] = el; }}> */}
-        {/* <Dsdotc /> */}
-        {/* </div> */}
+        {bodyVariant === 'scientific-programmes' && (
+          <div className='section' id='scientificprogrammes' ref={sectionRef}>
+            <ScientificProgrammes />
+          </div>
+        )}
+
+        {bodyVariant === 'distinguished-speakers' && (
+          <div className='section-infinite' id='distinguishedspeakers' ref={sectionRef}>
+            <DistinguishedSpeakers />
+          </div>
+        )}
+
+        {displayFellowship && (
+          <Fellowship isVisible={displayFellowship} setIsVisible={setDisplayFellowship} />
+        )}
+
+        {displayGoldenJubileeLetter && (
+          <GoldenJubileeLetter
+            isVisible={displayGoldenJubileeLetter}
+            setIsVisible={setDisplayGoldenJubileeLetter}
+          />
+        )}
+
+        {/* Render the OfficeBearers modal */}
+        {displayOfficeBearers && (
+          <OfficeBearers isVisible={displayOfficeBearers} setIsVisible={setDisplayOfficeBearers} />
+        )}
       </div>
     </div>
   );

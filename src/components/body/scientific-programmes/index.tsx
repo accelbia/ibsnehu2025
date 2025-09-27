@@ -5,8 +5,8 @@ const ScientificProgrammes: React.FC = () => {
     <div className='scientific-programmes'>
       <h1>Scientific Programmes</h1>
       <p>
-        Besides the presidential address, and special invited plenary lectures,
-        the following award lectures are planned during the event.
+        Besides the presidential address, and special invited plenary lectures, the following award
+        lectures are planned during the event.
       </p>
 
       <h2>COMMEMORATIVE MEDAL LECTURES</h2>
@@ -40,8 +40,7 @@ const ScientificProgrammes: React.FC = () => {
 
         <ul className='recipients'>
           <li>
-            Prof. Swapan Datta{' '}
-            <span className='honors'>FNA FASc FNASc FNAAS</span>
+            Prof. Swapan Datta <span className='honors'>FNA FASc FNASc FNAAS</span>
           </li>
           <li>Dr. Sanjeeva Nayaka</li>
         </ul>
@@ -57,8 +56,8 @@ const ScientificProgrammes: React.FC = () => {
           <li>Prof. S. N. Chaturvedi Memorial Lecture Medal</li>
           <li>Prof. R. S. Tripathi Memorial Lecture Medal</li>
           <li>Women Scientist Medal</li>
-          <li>Prof. Y.S.Murty Memorial Gold Medal</li>
-          <li>IBS Active participation recognition Award</li>
+          <li>Prof. Y. S. Murty Memorial Gold Medal</li>
+          <li>AIBC Companion Award</li>
           <li>Senior Botanists</li>
           <li>Fellows of the Society</li>
         </ul>
@@ -71,9 +70,11 @@ const ScientificProgrammes: React.FC = () => {
           <li>Prof. Joginder Singh Panwar</li>
           <li>Prof. Pravin Chandra Trivedi</li>
           <li>
-            Prof. Eklabya Sharma{' '}
-            <span className='honors'>FNA FNASc PADMA SHRI</span>
+            Prof. Eklabya Sharma <span className='honors'>FNA FNASc PADMA SHRI</span>
           </li>
+          <li>Dr. Shachi Singh</li>
+          <li>Dr. K. M. Manudev</li>
+          <li>Prof. Ramlakhan S. Sikarwar, Prof. Menakshi S. Vaidya</li>
         </ul>
       </div>
     </div>

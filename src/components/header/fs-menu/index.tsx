@@ -11,8 +11,8 @@ interface FsMenuProps {
   displayInvitation: boolean;
   setDisplayInvitation: (value: boolean) => void;
 
-  displayMembershipAndFellowship: boolean;
-  setDisplayMembershipAndFellowship: (value: boolean) => void;
+  displayMembership: boolean;
+  setDisplayMembership: (value: boolean) => void;
 
   displayOfficeBearers: boolean;
   setDisplayOfficeBearers: (value: boolean) => void;
@@ -26,10 +26,8 @@ const FsMenu: React.FC<FsMenuProps> = ({
   setDisplayMenu,
   displayInvitation,
   setDisplayInvitation,
-  displayMembershipAndFellowship,
-  setDisplayMembershipAndFellowship,
-  displayOfficeBearers,
-  setDisplayOfficeBearers,
+  displayMembership,
+  setDisplayMembership,
   displayTimeline,
   setDisplayTimeline,
 }) => {
@@ -46,6 +44,12 @@ const FsMenu: React.FC<FsMenuProps> = ({
       <div className='fs-menu-content'>
         <ul>
           <li>
+            <a href='/' onClick={() => setDisplayMenu(false)}>
+              Home
+            </a>
+          </li>
+
+          <li>
             <a
               onClick={() => {
                 setDisplayInvitation(!displayInvitation);
@@ -58,33 +62,11 @@ const FsMenu: React.FC<FsMenuProps> = ({
           <li>
             <a
               onClick={() => {
-                setDisplayMembershipAndFellowship(
-                  !displayMembershipAndFellowship,
-                );
+                setDisplayMembership(!displayMembership);
                 setDisplayMenu(false);
               }}
             >
-              Membership and Fellowship
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                setDisplayOfficeBearers(!displayOfficeBearers);
-                setDisplayMenu(false);
-              }}
-            >
-              Office Bearers
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                setDisplayOfficeBearers(!displayOfficeBearers);
-                setDisplayMenu(false);
-              }}
-            >
-              Office Bearers
+              IBS Membership
             </a>
           </li>
           <li>
@@ -100,7 +82,7 @@ const FsMenu: React.FC<FsMenuProps> = ({
           <li>
             <a
               className='button'
-              href='https://register.ibsnehu2025.org/'
+              href='https://forms.cloud.microsoft/r/G8UMm1RdEx'
               target='_blank'
               onClick={() => setDisplayMenu(false)}
             >

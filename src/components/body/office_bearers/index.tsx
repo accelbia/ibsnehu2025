@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
-import data from './data.json';
+import data from '../../../assets/data.json';
 import './index.css';
 // Register the SplitText plugin
 gsap.registerPlugin(SplitText);
@@ -13,10 +13,7 @@ interface OfficeBearersProps {
   setIsVisible: (value: boolean) => void;
 }
 
-const OfficeBearers: React.FC<OfficeBearersProps> = ({
-  isVisible,
-  setIsVisible,
-}) => {
+const OfficeBearers: React.FC<OfficeBearersProps> = ({ isVisible, setIsVisible }) => {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const sectionsRef = useRef<HTMLDivElement[]>([]);
 
@@ -184,12 +181,8 @@ const OfficeBearers: React.FC<OfficeBearersProps> = ({
             >
               {Object.entries(item).map(([subKey, subValue], detailIndex) => (
                 <div className='member-l2' key={detailIndex}>
-                  {subKey === 'Name' && (
-                    <div className='subvalueName'>{subValue}</div>
-                  )}
-                  {subKey === 'City' && (
-                    <div className='subvalueCity'>{subValue}</div>
-                  )}
+                  {subKey === 'Name' && <div className='subvalueName'>{subValue}</div>}
+                  {subKey === 'City' && <div className='subvalueCity'>{subValue}</div>}
                 </div>
               ))}
             </div>
@@ -233,10 +226,7 @@ const OfficeBearers: React.FC<OfficeBearersProps> = ({
           </div>
         </div>
       </div>
-      <div
-        className='fullscreen-blur'
-        onClick={() => setIsVisible(false)}
-      ></div>
+      <div className='fullscreen-blur' onClick={() => setIsVisible(false)}></div>
     </>
   );
 };

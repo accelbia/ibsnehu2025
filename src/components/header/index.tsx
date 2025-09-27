@@ -3,13 +3,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 import './index.css';
 import FsMenu from './fs-menu';
+import TitleIcon from './title-icon';
 
 interface HeaderProps {
   displayInvitation: boolean;
   setDisplayInvitation: (value: boolean) => void;
 
-  displayMembershipAndFellowship: boolean;
-  setDisplayMembershipAndFellowship: (value: boolean) => void;
+  displayMembership: boolean;
+  setDisplayMembership: (value: boolean) => void;
 
   displayOfficeBearers: boolean;
   setDisplayOfficeBearers: (value: boolean) => void;
@@ -24,8 +25,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({
   displayInvitation,
   setDisplayInvitation,
-  displayMembershipAndFellowship,
-  setDisplayMembershipAndFellowship,
+  displayMembership,
+  setDisplayMembership,
   displayOfficeBearers,
   setDisplayOfficeBearers,
   displayMenu,
@@ -35,44 +36,12 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header>
-      <div className='title desktop'>
-        <h1>
-          XLVIII ALL INDIA BOTANICAL CONFERENCE{' '}
-          <span
-            style={{
-              fontStyle: 'italic',
-              textTransform: 'lowercase',
-            }}
-          >
-            of
-          </span>
-          <br />
-          THE INDIAN BOTANICAL SOCIETY
-          <br />
-        </h1>
-        <p>
-          And International Symposium on Biology and Biotechnology of Plant
-          Diversity for Bioeconomy
-        </p>
-      </div>
-
-      <div className='title mobile'>
-        <h1>
-          XLVIII AIBC{' '}
-          <span
-            style={{
-              fontStyle: 'italic',
-              textTransform: 'lowercase',
-            }}
-          >
-            of
-          </span>{' '}
-          IBS
-        </h1>
-      </div>
-
+      <TitleIcon />
       <nav>
         <ul>
+          <li>
+            <a href='/'>Home</a>
+          </li>
           <li>
             <a
               className='navButton'
@@ -84,31 +53,17 @@ const Header: React.FC<HeaderProps> = ({
             </a>
           </li>
           <li>
-            <a
-              className='navButton'
-              onClick={() =>
-                setDisplayMembershipAndFellowship(
-                  !displayMembershipAndFellowship,
-                )
-              }
-            >
-              Membership and Fellowship
+            <a className='navButton' onClick={() => setDisplayMembership(!displayMembership)}>
+              IBS Membership
             </a>
           </li>
           <li>
-            <a
-              className='navButton'
-              onClick={() => setDisplayTimeline(!displayTimeline)}
-            >
+            <a className='navButton' onClick={() => setDisplayTimeline(!displayTimeline)}>
               Pre and Post Conference Events
             </a>
           </li>
         </ul>
-        <a
-          className='button'
-          href='https://register.ibsnehu2025.org/'
-          target='_blank'
-        >
+        <a className='button' href='https://register.ibsnehu2025.org/' target='_blank'>
           Register
           <LaunchIcon />
         </a>
@@ -127,8 +82,8 @@ const Header: React.FC<HeaderProps> = ({
         setDisplayMenu={setDisplayMenu}
         displayInvitation={displayInvitation}
         setDisplayInvitation={setDisplayInvitation}
-        displayMembershipAndFellowship={displayMembershipAndFellowship}
-        setDisplayMembershipAndFellowship={setDisplayMembershipAndFellowship}
+        displayMembership={displayMembership}
+        setDisplayMembership={setDisplayMembership}
         displayOfficeBearers={displayOfficeBearers}
         setDisplayOfficeBearers={setDisplayOfficeBearers}
         displayTimeline={displayTimeline}

@@ -1,8 +1,17 @@
+/* General Styles */
 .section {
-  height: 100vh;
-  padding-top: 100px;
-  /* Adjusted to account for header height */
+  min-height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;
+}
 
+.section-infinite {
+  min-height: 100vh;
+  padding-top: 60px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -12,7 +21,7 @@
 
 @media screen and (max-width: 767px) {
   .section {
-    padding-top: 60px;
+    padding-top: 20px;
   }
 }
 
@@ -22,8 +31,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0 50px;
 }
 
 .landing {
@@ -36,14 +44,13 @@
   font-size: 1.5rem;
   font-weight: 200;
   max-width: 900px;
-  width: 100%;
-  /* Optional: Ensures it doesn't exceed the max-width */
+  width: 100%; /* Ensures it doesn't exceed the max-width */
 }
 
 a[type='button'] {
+  margin-top: 20px;
   width: fit-content;
   padding: 0.6em 1.2em;
-  position: absolute;
   bottom: 40px;
 }
 
@@ -58,35 +65,35 @@ a[type='button'] {
   font-family: var(--section-font);
 }
 
-.countdown {
-  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
+/* Countdown Styles */
+.countdown,
+.seconds-remaining {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 200;
+  text-transform: uppercase;
+}
+
+.countdown {
   font-size: 2rem;
   margin-top: 60px;
-  text-transform: uppercase;
 }
 
 .seconds-remaining {
-  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
-  font-weight: 200;
   font-size: 1.5rem;
   margin-top: 5px;
-  text-transform: uppercase;
 }
 
+/* OBC Section */
 #obc ul {
   display: flex;
   flex-direction: column;
-  padding-right: 2em;
-  gap: 0em;
-  /* no left margin */
-  margin-left: 0;
-  padding-left: 0;
+  padding: 0 2em 0 0;
+  margin: 0;
+  gap: 0;
 }
 
 #obc p {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   color: var(--text-color);
 }
 
@@ -119,13 +126,13 @@ a[type='button'] {
   gap: 4em;
 }
 
+/* Ordered List Styles */
 ol {
   padding-left: 1.2em;
   margin-top: 1em;
-  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 10pt;
-
   line-height: 1.2;
   letter-spacing: -0.03em;
 }
@@ -136,6 +143,7 @@ ol li {
   text-justify: inter-word;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 1200px) {
   .landing-title h1 {
     font-size: 1.5rem;
