@@ -225,7 +225,6 @@ const SightSeeing: React.FC<SightSeeingProps> = ({ isVisible, setIsVisible }) =>
             navigation
             pagination={{ clickable: true }}
             style={{ width: '100%', height: 'auto' }}
-            onSlideChange={() => console.log('slide change')}
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>
