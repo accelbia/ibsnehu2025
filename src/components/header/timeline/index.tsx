@@ -285,9 +285,12 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
                   <strong>Presidential Remark:</strong> Dr. Shiva Prasad Agarwal, President ISRS and
                   Director, NESAC
                   <br />
-                  <strong>Chief Guest:</strong> Dr. Subhash Ashutosh, MBDA, Government of Meghalaya
+                  <strong>Chief Guest:</strong> Dr. Subhash Ashutosh{' '}
+                  <span className='honors'>IFS</span>, Former Director, FSI, & Co-Chairman and
+                  Director, CoE for NRM & Sustainable Livelihoods, MBDA/MBMA, Govt. of Meghalaya
                   <br />
-                  <strong>Vote of Thanks:</strong> Dr. Dibyajyoti Chutia, NESAC
+                  <strong>Vote of Thanks:</strong> Dr. Dibyajyoti Chutia, Head, Geoinformatics and
+                  IT Division, NESAC
                   <br />
                   <strong>Faculty Members:</strong> Scientists from IIT Kharagpur (Dr. Mukund D
                   Behera, Vikramjeet Singh), and NESAC (Dr. K.K. Sharma, Dr. Kasturi Chakraborty,
@@ -404,15 +407,17 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
                   <strong>Welcome and Training Report:</strong> Prof. S. K. Barik, Dean, School of
                   Life Sciences, NEHU
                   <br />
-                  <strong>Presidential Remark:</strong> Dr. K. K. Sharma, NESAC
+                  <strong>Presidential Remark:</strong> Dr. K. K. Sharma, Group Head, Remote Sensing
+                  Applications Group, NESAC
                   <br />
                   <strong>Address by the Chief Guest:</strong> Prof. P. S. Roy{' '}
-                  <span className='honors'>FNASc FNAAS</span>, Former Dean, Indian Institute of
-                  Remote Sensing, Dehradun
+                  <span className='honors'>FNASc FNAAS</span>, Former Director, Indian Institute of
+                  Remote Sensing, Dept. of Space, Govt. of India, Dehradun
                   <br />
                   <strong>Distribution of Certificates:</strong> Chief Guest
                   <br />
-                  <strong>Vote of Thanks:</strong> Dr. Kasturi Chakraborty, NESAC
+                  <strong>Vote of Thanks:</strong> Dr. Kasturi Chakraborty, Head, Forestry & Ecology
+                  Division, NESAC
                   <br />
                 </p>
               </TimelineContent>
@@ -530,13 +535,13 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
               <li>
                 <p className='name'>Dr. K. K. Sharma</p>
                 <p className='affiliation'>
-                  NESAC, Group Head, Remote Sensing Applications Group (RSAG), NESAC & Deputy
-                  Project Director, NER-DRR
+                  Group Head, Remote Sensing Applications Group (RSAG), NESAC & Deputy Project
+                  Director, NER-DRR
                 </p>
               </li>
               <li>
                 <p className='name'>Dr. Kasturi Chakraborty</p>
-                <p className='affiliation'>Head, Forestry and Ecology Division, NESAC</p>
+                <p className='affiliation'>Head, Forestry & Ecology Division, NESAC</p>
               </li>
               <li>
                 <p className='name'>Dr. Dibyajyoti Chutia</p>
@@ -551,7 +556,7 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
             <h2>Advisers</h2>
             <ul className='organizers-list'>
               <li>
-                <p className='name'>Dr. Subhash Ashutosh IFS</p>
+                <p className='name'>Dr. Subhash Ashutosh</p>
                 <p className='affiliation'>
                   Former Director, Forest Survey of India, and Co-Chairman and Director, Centre of
                   Excellence for NRM & Sustainable Livelihoods, MBDA/MBMA, Govt. of Meghalaya

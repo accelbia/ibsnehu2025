@@ -1,4 +1,5 @@
 import './index.css';
+
 const TitleIcon = () => {
   const handleClick = () => {
     window.location.reload(); // Reloads the page to reset to default

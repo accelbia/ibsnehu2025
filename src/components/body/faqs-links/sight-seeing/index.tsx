@@ -15,20 +15,20 @@ gsap.registerPlugin(SplitText);
 
 const images = [
   {
-    src: '/Sight Seeing/Arwah-Cave-1.jpg',
-    caption: 'Arwah Cave: A limestone cave with fossils and stalactites.',
-  },
-  {
-    src: '/Sight Seeing/Dainthlen.jpg',
-    caption: 'Dainthlen Falls: A waterfall with a legendary tale.',
+    src: '/Sight Seeing/Khasi-Hills-Mawphanlur-1.jpg',
+    caption: 'Mawphanlur: A serene village in the Khasi Hills.',
   },
   {
     src: '/Sight Seeing/Dawki-Shnongpdeng.avif',
     caption: 'Dawki Shnongpdeng: A serene riverside destination.',
   },
   {
-    src: '/Sight Seeing/Khasi-Hills-Mawphanlur-1.jpg',
-    caption: 'Mawphanlur: A serene village in the Khasi Hills.',
+    src: '/Sight Seeing/Arwah-Cave-1.jpg',
+    caption: 'Arwah Cave: A limestone cave with fossils and stalactites.',
+  },
+  {
+    src: '/Sight Seeing/Dainthlen.jpg',
+    caption: 'Dainthlen Falls: A waterfall with a legendary tale.',
   },
   {
     src: '/Sight Seeing/Kongthong-Village-1.avif',
@@ -43,12 +43,9 @@ const images = [
     caption: 'Kyllang Rock: A massive dome-shaped rock formation.',
   },
   {
-    src: '/Sight Seeing/Mawlynnong-Living-Root-Bridge-1.jpg',
-    caption: 'Mawlynnong Living Root Bridge: A marvel of bioengineering.',
-  },
-  {
     src: '/Sight Seeing/Mawlynnong.avif',
-    caption: 'Mawlynnong: Asia’s cleanest village.',
+    caption:
+      'Mawlynnong Living Root Bridge: A marvel of bioengineeringa at Asia’s cleanest village',
   },
   {
     src: '/Sight Seeing/Mawphlang-Sacred-Groves-1.avif',
@@ -65,10 +62,6 @@ const images = [
   {
     src: '/Sight Seeing/Nohkalikai-Falls-1.webp',
     caption: 'Nohkalikai Falls: The tallest plunge waterfall in India.',
-  },
-  {
-    src: '/Sight Seeing/Nohkalikai-Waterfalls-1.webp',
-    caption: 'Nohkalikai Waterfalls: A breathtaking natural wonder.',
   },
   {
     src: '/Sight Seeing/Nongkhnum-River-Village-1.jpg',
