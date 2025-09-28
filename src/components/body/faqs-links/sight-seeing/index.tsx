@@ -76,6 +76,10 @@ const images = [
     caption: 'Shillong City: The Scotland of the East.',
   },
   {
+    src: '/Sight Seeing/Don-Bosco-Museum.png',
+    caption: 'Don Bosco Museum: Showcasing the rich culture of Northeast India.',
+  },
+  {
     src: '/Sight Seeing/Sohra-1.jpg',
     caption: 'Sohra (Cherrapunjee): Famous for its waterfalls and caves.',
   },
