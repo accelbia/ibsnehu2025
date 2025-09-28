@@ -114,43 +114,6 @@ const OfficeBearers: React.FC<OfficeBearersProps> = ({ isVisible, setIsVisible }
       </div>
     ));
 
-  const display_contact_person = Object.entries(data)
-    .slice(4, 5)
-    .map(([key, value], index) => (
-      //         "CONTACT PERSON": {
-      //     "Name": "Prof. Suman Kumaria",
-      //     "Role": "Organizing Secretary, All India Botanical Conference 2025",
-      //     "Department": "Department of Botany",
-      //     "Institution": "North-Eastern Hill University",
-      //     "City": "Shillong",
-      //     "Postal Code": "793022",
-      //     "Phone": "+91 9863068044",
-      //     "Email": "aibcshillong25@gmail.com"
-      // }
-      <div
-        key={index}
-        style={{
-          border: '1px solid #ccc',
-          borderRadius: '8px',
-          padding: '16px',
-          width: '1000px',
-          maxWidth: '90%',
-          minWidth: '300px',
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-          backgroundColor: '#f9f9f9',
-          marginTop: '16px',
-        }}
-      >
-        <h2>{key}</h2>
-        {Object.entries(value).map(([subKey, subValue], subIndex) => (
-          <div className='member-l2' key={subIndex}>
-            <div className='subkey'>{subKey}</div>
-            <div className='subvalue'>{subValue}</div>
-          </div>
-        ))}
-      </div>
-    ));
-
   const display_other_members = Object.entries(data)
     .slice(2, 4)
     .map(([key, value], index) => (
@@ -214,13 +177,11 @@ const OfficeBearers: React.FC<OfficeBearersProps> = ({ isVisible, setIsVisible }
             }}
           >
             <h1 ref={headingRef} style={{ marginBottom: '20px' }}>
-              Organizing bodies and Committees
+              IBS Office Bearers and Committees
             </h1>
           </div>
           <div className='memberList'>
             <div className='chairPeople'>{display_chairpeople}</div>
-
-            {display_contact_person}
 
             <div className='otherMembers'>{display_other_members}</div>
           </div>

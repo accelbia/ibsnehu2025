@@ -143,19 +143,13 @@ const FAQsLinks = ({
               Accommodation Allotment
             </a>
           </div>
-          {/* <div className='link-item coming-soon'>
-            <a className='link'>
-              <CalendarTodayIcon fontSize='small' style={{ marginRight: '5px' }} />
-              Program Schedule
-            </a>
-          </div> */}
           <div className='link-item'>
             <a
               className='link'
               onClick={() => setDisplayOfficeBearers(true)} // Open office bearers modal
             >
               <BadgeIcon fontSize='small' style={{ marginRight: '5px' }} />
-              IBS Office Bearers and Organizing Committee
+              IBS Office Bearers and Organizing Committees
             </a>
           </div>
           <div className='link-item'>

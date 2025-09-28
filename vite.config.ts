@@ -6,4 +6,7 @@ import { ghPages } from 'vite-plugin-gh-pages';
 export default defineConfig({
   plugins: [react(), ghPages()],
   base: '/',
+  define: {
+    'process.env.BUILD_TIMESTAMP': JSON.stringify(new Date().toISOString()),
+  },
 });

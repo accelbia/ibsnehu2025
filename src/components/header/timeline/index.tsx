@@ -265,10 +265,15 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
             </TimelineItem>
 
             <TimelineItem className='timelineItem'>
+              <TimelineOppositeContent>
+                <h3 className='date'>28th October, 2025</h3>
+                <h3 className='date'>12:30 pm - 1:30 pm</h3>
+              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
+
               <TimelineContent>
                 <h3 className='timelineTitle'>Inauguration</h3>
                 <p className='timelineContent'>
@@ -277,13 +282,16 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
                   <strong>About the Course:</strong> Course Director: Dr. Mukund D. Behera, IIT
                   Kharagpur
                   <br />
-                  <strong>Chief Guest:</strong> Dr. Subhash Ashutosh, MBDA, Government of Meghalaya
-                  <br />
                   <strong>Presidential Remark:</strong> Dr. Shiva Prasad Agarwal, President ISRS and
                   Director, NESAC
                   <br />
+                  <strong>Chief Guest:</strong> Dr. Subhash Ashutosh, MBDA, Government of Meghalaya
+                  <br />
+                  <strong>Vote of Thanks:</strong> Dr. Dibyajyoti Chutia, NESAC
+                  <br />
                   <strong>Faculty Members:</strong> Scientists from IIT Kharagpur (Dr. Mukund D
-                  Behera, Vikramjeet Singh), and NESAC (Dr. K.K. Sharma, Dr. Kasturi Chakraborty)
+                  Behera, Vikramjeet Singh), and NESAC (Dr. K.K. Sharma, Dr. Kasturi Chakraborty,
+                  Dr. Dibyajyoti Chutia)
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -375,9 +383,38 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
             <TimelineItem className='timelineItem'>
               <TimelineSeparator>
                 <TimelineDot />
+                <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
                 <h3 className='timelineTitle'>Event Concludes with distribution of Certificates</h3>
+              </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem className='timelineItem'>
+              <TimelineOppositeContent>
+                <h3 className='date'>1st November, 2025</h3>
+                <h3 className='date'>5:00 pm - 6:00 pm</h3>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot />
+              </TimelineSeparator>
+              <TimelineContent>
+                <h3 className='timelineTitle'>Concluding Session</h3>
+                <p className='timelineContent'>
+                  <strong>Welcome and Training Report:</strong> Prof. S. K. Barik, Dean, School of
+                  Life Sciences, NEHU
+                  <br />
+                  <strong>Presidential Remark:</strong> Dr. K. K. Sharma, NESAC
+                  <br />
+                  <strong>Address by the Chief Guest:</strong> Prof. P. S. Roy{' '}
+                  <span className='honors'>FNASc FNAAS</span>, Former Dean, Indian Institute of
+                  Remote Sensing, Dehradun
+                  <br />
+                  <strong>Distribution of Certificates:</strong> Chief Guest
+                  <br />
+                  <strong>Vote of Thanks:</strong> Dr. Kasturi Chakraborty, NESAC
+                  <br />
+                </p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
@@ -445,6 +482,18 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
                 </a>
               </li>
               <li>
+                <a className='organizer-item' href='https://isgindia.org/' target='_blank'>
+                  <img
+                    src='/Sponsor Logos/isg.png'
+                    alt='Indian Society of Geomatics, Kharagpur Chapter'
+                    style={{ width: 'auto', height: '80px' }}
+                  />
+                  <span className='organizer-alt'>
+                    Indian Society of Geomatics, Kharagpur Chapter
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a className='organizer-item' href='https://mbda.gov.in/' target='_blank'>
                   <img
                     src='/Sponsor Logos/mbda.jpeg'
@@ -476,7 +525,7 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
               </li>
             </ul>
 
-            <h2>Faculty</h2>
+            <h2>Training Faculty</h2>
             <ul className='organizers-list'>
               <li>
                 <p className='name'>Dr. K. K. Sharma</p>
@@ -492,6 +541,10 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
               <li>
                 <p className='name'>Dr. Dibyajyoti Chutia</p>
                 <p className='affiliation'>Head, Geoinformatics and IT Division, NESAC</p>
+              </li>
+              <li>
+                <p className='name'>Vikramjeet Singh</p>
+                <p className='affiliation'>CORAL, IIT Kharagpur</p>
               </li>
             </ul>
 

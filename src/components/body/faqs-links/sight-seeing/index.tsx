@@ -3,29 +3,17 @@ import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
-// import { Carousel } from 'react-responsive-carousel';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.css';
+import './pagination.css';
+import './a11y.css';
+import './navigation.css';
 
 // Register the SplitText plugin
 gsap.registerPlugin(SplitText);
 
 const images = [
-  {
-    src: '/Sight Seeing/Kyllang-Rock-1.jpg',
-    caption: 'Kyllang Rock: A massive dome-shaped rock formation.',
-  },
-  {
-    src: '/Sight Seeing/Mawlynnong-Living-Root-Bridge-1.jpg',
-    caption: 'Mawlynnong Living Root Bridge: A marvel of bioengineering.',
-  },
-  {
-    src: '/Sight Seeing/Shillong-City-1.jpg',
-    caption: 'Shillong City: The Scotland of the East.',
-  },
-  {
-    src: '/Sight Seeing/sohra.jpg',
-    caption: 'Sohra (Cherrapunjee): Famous for its waterfalls and caves.',
-  },
   {
     src: '/Sight Seeing/Arwah-Cave-1.jpg',
     caption: 'Arwah Cave: A limestone cave with fossils and stalactites.',
@@ -35,12 +23,52 @@ const images = [
     caption: 'Dainthlen Falls: A waterfall with a legendary tale.',
   },
   {
+    src: '/Sight Seeing/Dawki-Shnongpdeng.avif',
+    caption: 'Dawki Shnongpdeng: A serene riverside destination.',
+  },
+  {
     src: '/Sight Seeing/Khasi-Hills-Mawphanlur-1.jpg',
     caption: 'Mawphanlur: A serene village in the Khasi Hills.',
   },
   {
+    src: '/Sight Seeing/Kongthong-Village-1.avif',
+    caption: 'Kongthong Village: The whistling village of Meghalaya.',
+  },
+  {
+    src: '/Sight Seeing/Krangshuri.jpg',
+    caption: 'Krangshuri Falls: A stunning waterfall with crystal-clear waters.',
+  },
+  {
+    src: '/Sight Seeing/Kyllang-Rock-1.jpg',
+    caption: 'Kyllang Rock: A massive dome-shaped rock formation.',
+  },
+  {
+    src: '/Sight Seeing/Mawlynnong-Living-Root-Bridge-1.jpg',
+    caption: 'Mawlynnong Living Root Bridge: A marvel of bioengineering.',
+  },
+  {
+    src: '/Sight Seeing/Mawlynnong.avif',
+    caption: 'Mawlynnong: Asia’s cleanest village.',
+  },
+  {
+    src: '/Sight Seeing/Mawphlang-Sacred-Groves-1.avif',
+    caption: 'Mawphlang Sacred Groves: A forest steeped in tradition.',
+  },
+  {
     src: '/Sight Seeing/Mawsmai-Cave-1.jpg',
     caption: 'Mawsmai Cave: A popular tourist cave in Sohra.',
+  },
+  {
+    src: '/Sight Seeing/Nartiang-Monoliths.avif',
+    caption: 'Nartiang Monoliths: A site of ancient monolithic structures.',
+  },
+  {
+    src: '/Sight Seeing/Nohkalikai-Falls-1.webp',
+    caption: 'Nohkalikai Falls: The tallest plunge waterfall in India.',
+  },
+  {
+    src: '/Sight Seeing/Nohkalikai-Waterfalls-1.webp',
+    caption: 'Nohkalikai Waterfalls: A breathtaking natural wonder.',
   },
   {
     src: '/Sight Seeing/Nongkhnum-River-Village-1.jpg',
@@ -49,6 +77,14 @@ const images = [
   {
     src: '/Sight Seeing/Nongriat-Root-Bridges-1.jpg',
     caption: 'Nongriat Root Bridges: Famous double-decker living root bridge.',
+  },
+  {
+    src: '/Sight Seeing/Shillong-City-1.jpg',
+    caption: 'Shillong City: The Scotland of the East.',
+  },
+  {
+    src: '/Sight Seeing/Sohra-1.jpg',
+    caption: 'Sohra (Cherrapunjee): Famous for its waterfalls and caves.',
   },
   {
     src: '/Sight Seeing/Umiam-Lake-1.jpg',
@@ -94,15 +130,18 @@ const SightSeeing: React.FC<SightSeeingProps> = ({ isVisible, setIsVisible }) =>
     };
   }, [isVisible, setIsVisible]);
 
+  // Ensure fonts are loaded before initializing SplitText
   useEffect(() => {
     if (isVisible && headingRef.current) {
-      const split = new SplitText(headingRef.current, { type: 'chars' });
-      gsap.from(split.chars, {
-        duration: 1,
-        opacity: 0,
-        y: 10,
-        stagger: 0.05,
-        ease: 'power2.out',
+      document.fonts.ready.then(() => {
+        const split = new SplitText(headingRef.current, { type: 'chars' });
+        gsap.from(split.chars, {
+          duration: 1,
+          opacity: 0,
+          y: 10,
+          stagger: 0.05,
+          ease: 'power2.out',
+        });
       });
     }
   }, [isVisible]);
@@ -180,70 +219,40 @@ const SightSeeing: React.FC<SightSeeingProps> = ({ isVisible, setIsVisible }) =>
             monoliths at Nartiang, the scenic beauty of Umiam, and the Double Decker Root Bridge at
             Mawlynnong.
           </p>
-          {/* <Carousel
-            autoPlay
-            infiniteLoop
-            interval={5000}
-            showThumbs={false}
-            showStatus={false}
-            dynamicHeight={false}
-            centerMode={true}
-            centerSlidePercentage={100}
-            emulateTouch
-            swipeable
+
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            modules={[Navigation, Pagination, A11y]}
+            scrollbar={{ draggable: true }}
+            navigation
+            pagination={{ clickable: true }}
+            style={{ width: '100%', height: 'auto' }}
+            onSlideChange={() => console.log('slide change')}
           >
             {images.map((image, index) => (
-              <div
-                key={index}
-                style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-              >
-                <img
-                  src={image.src}
-                  alt={image.caption}
-                  style={{ maxWidth: '100%', height: 'auto' }}
-                />
-                <p className='legend' style={{ textAlign: 'center' }}>
-                  {image.caption}
-                </p>
-              </div>
+              <SwiperSlide key={index}>
+                <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+                  <img
+                    src={image.src}
+                    alt={image.caption}
+                    style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                  />
+                  <p style={{ marginTop: '8px', fontStyle: 'italic' }}>{image.caption}</p>
+                </div>
+              </SwiperSlide>
             ))}
-          </Carousel>
-          <p>[Photo Courtesy: Meghalaya Tourism]</p> */}
-          <img
-            src={`${images[0].src}`}
-            alt={images[0].caption}
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
-          <p className='legend' style={{ textAlign: 'center' }}>
-            {images[0].caption}
-          </p>
-          <img
-            src={`${images[1].src}`}
-            alt={images[1].caption}
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
-          <p className='legend' style={{ textAlign: 'center' }}>
-            {images[1].caption}
-          </p>
-          <img
-            src={`${images[2].src}`}
-            alt={images[2].caption}
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
-          <p className='legend' style={{ textAlign: 'center' }}>
-            {images[2].caption}
-          </p>
-          <img
-            src={`${images[3].src}`}
-            alt={images[3].caption}
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
-          <p className='legend' style={{ textAlign: 'center' }}>
-            {images[3].caption}
+          </Swiper>
+
+          <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#555' }}>
+            Image Credits:{' '}
+            <a href='https://www.meghalayatourism.in' target='_blank' rel='noopener noreferrer'>
+              Meghalaya Tourism
+            </a>
           </p>
           <p>
             Participants interested in sight seeing may contact the Registration Counter of the
-            conference on the arrival day and book their visits for arrangement of Vehicles on
+            conference on the arrival day and book their visits for arrangement of vehicles on
             payment basis.
           </p>
         </div>
