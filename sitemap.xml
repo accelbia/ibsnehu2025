@@ -3,22 +3,7 @@
   <url>
     <loc>https://ibsnehu2025.org/</loc>
     <lastmod>2025-09-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ibsnehu2025.org/Sight%20Seeing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://ibsnehu2025.org/Sponsor%20Logos/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://ibsnehu2025.org/people/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
   </url>
 </urlset>
