@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Prof. Rajesh Sudhir Gokhale",
+    "honors": "FNA FASc FNASc",
+    "affiliation": "Secretary, Department of Biotechnology, Govt. of India",
+    "image": "rsg.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Dr. S. P. Agarwal",
+    "honors": "",
+    "affiliation": "Director, North-East Space Applications Centre (ISRO), Shillong",
+    "image": "spag.jpg"
+  }
+]

@@ -1,15 +1,8 @@
 [
   {
-    "id": 1,
-    "name": "Prof. Rajesh Sudhir Gokhale",
-    "honors": "FNA FASC FNASc",
-    "affiliation": "Secretary, Department of Biotechnology, Govt. of India",
-    "image": "rsg.jpg"
-  },
-  {
     "id": 2,
-    "name": "Prof. Sekhar C. Mande",
-    "honors": "FNA FASC FNASc",
+    "name": "Prof. Shekhar C. Mande",
+    "honors": "FNA FASc FNASc",
     "affiliation": "Former Director General, CSIR & Former Secretary, DSIR (Govt. of India)",
     "image": "scm.jpg"
   },
@@ -21,13 +14,6 @@
     "image": "ss.jpg"
   },
   {
-    "id": 4,
-    "name": "Prof. Anil Kumar Tripathi",
-    "honors": "FNA FASc FNASc",
-    "affiliation": "Director, IISER Mohali and Former Director, Indian Institute of Science, BHU and CSIR-CIMAP",
-    "image": "akt.jpg"
-  },
-  {
     "id": 5,
     "name": "Dr. Sanjay Kumar",
     "honors": "FNA FNASc FNAAS",
@@ -35,16 +21,16 @@
     "image": "sk.jpg"
   },
   {
-    "id": 6,
-    "name": "Prof. R. K. Kohli",
-    "honors": "FNA FASc FNASc FNAAS",
-    "affiliation": "Former Vice-Chancellor, Central University of Punjab & Amity University Punjab",
-    "image": "rkk.jpg"
+    "id": 4,
+    "name": "Prof. Anil Kumar Tripathi",
+    "honors": "FNA FASc FNASc",
+    "affiliation": "Director, IISER Mohali and Former Director, Indian Institute of Science, BHU and CSIR-CIMAP",
+    "image": "akt.jpg"
   },
   {
     "id": 7,
     "name": "Prof. Swapan Datta",
-    "honors": "FNA FASC FNASc FNAAS FTWAS",
+    "honors": "FNA FASc FNASc FNAAS FTWAS",
     "affiliation": "Former Vice-Chancellor, Visva-Bharati University; Former Deputy Director General (Crop Science), ICAR",
     "image": "sd.jpg"
   },
@@ -56,6 +42,20 @@
     "image": "pt.jpg"
   },
   {
+    "id": 10,
+    "name": "Padmashree Prof. Eklabya Sharma",
+    "honors": "FNA FNASc",
+    "affiliation": "Strategic Advisor & Senior Fellow, ATREE; Former Deputy Director General, ICIMOD",
+    "image": "es.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Padmashree Prof. Veena Tandon",
+    "honors": "FNASc",
+    "affiliation": "Former Professor & Dean (Life Sciences), NEHU",
+    "image": "vt.jpg"
+  },
+  {
     "id": 9,
     "name": "Prof. S.P. Adhikary",
     "honors": "FNAAS",
@@ -63,11 +63,32 @@
     "image": "spa.jpg"
   },
   {
-    "id": 10,
-    "name": "Padmashree Prof. Eklabya Sharma",
-    "honors": "FNA FNASc",
-    "affiliation": "Strategic Advisor & Senior Fellow, ATREE; Former Deputy Director General, ICIMOD",
-    "image": "es.jpg"
+    "id": 16,
+    "name": "Dr. S.K. Bhalla",
+    "honors": "ITS",
+    "affiliation": "Secretary, North Eastern Council (NEC), Government of India",
+    "image": "skb.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Dr. Subhash Ashutosh",
+    "honors": "IFS",
+    "affiliation": "Co‑Chairman & Director, CoE‑NRMSL, Govt. of Meghalaya; Former Director General, Forest Survey of India",
+    "image": "sa.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Shri Harish Chaudhury",
+    "honors": "IFS",
+    "affiliation": "Principal Chief Conservator of Forests, Meghalaya",
+    "image": "hc.png"
+  },
+  {
+    "id": 19,
+    "name": "Dr. Joran Beda",
+    "honors": "IAS",
+    "affiliation": "Centre for Climate Change, Meghalaya",
+    "image": "jb.jpg"
   },
   {
     "id": 11,
@@ -105,18 +126,18 @@
     "image": "js.jpg"
   },
   {
-    "id": 16,
-    "name": "Dr. S.K. Bhalla",
-    "honors": "ITS",
-    "affiliation": "Secretary, North Eastern Council (NEC), Government of India",
-    "image": "skb.jpg"
-  },
-  {
     "id": 17,
     "name": "Dr. Virendra M. Tiwari",
     "honors": "FNA FASc FNASc",
     "affiliation": "Director, CSIR–NEIST, Jorhat and Former Director, CSIR-NGRI, Hyderabad",
     "image": "vmt.jpg"
+  },
+  {
+    "id": 51,
+    "name": "Dr. Prabodh K. Trivedi",
+    "honors": "FNA FASc FNASc FNAAS",
+    "affiliation": "Director, CSIR-CIMAP, Lucknow",
+    "image": "pkt.webp"
   },
   {
     "id": 18,
@@ -126,30 +147,58 @@
     "image": "aks.jpg"
   },
   {
-    "id": 19,
-    "name": "Dr. Joran Beda IAS",
-    "honors": "",
-    "affiliation": "Centre for Climate Change, Meghalaya",
-    "image": "jb.jpg"
-  },
-  {
     "id": 20,
     "name": "Dr. Munivenkatappa Sanjappa",
-    "honors": "FNA FNASc FASC",
+    "honors": "FNA FASc FNASc",
     "affiliation": "Former Director, Botanical Survey of India",
     "image": "ms.jpg"
   },
   {
-    "id": 21,
-    "name": "Padmashree Prof. Veena Tandon",
+    "id": 6,
+    "name": "Prof. P. S. Roy",
+    "honors": "FNASc FNAAS",
+    "affiliation": "Former Director, Indian Institute of Remote Sensing (ISRO), Dehradun",
+    "image": "psr.jpeg"
+  },
+  {
+    "id": 30,
+    "name": "Dr. A. A. Mao",
     "honors": "FNASc",
-    "affiliation": "Former Professor & Dean (Life Sciences), NEHU",
-    "image": "vt.jpg"
+    "affiliation": "Former Director, Botanical Survey of India",
+    "image": "aam.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Dr. Arun K. Sharma",
+    "honors": "",
+    "affiliation": "Director General, NECTAR, Department of Science & Technology, Govt. of India",
+    "image": "aksh.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Prof. Rabinarayan Acharya",
+    "honors": "",
+    "affiliation": "Director General, Central Council of Research in Ayurvedic Sciences, Ministry of AYUSH, Govt. of India",
+    "image": "rna.jpeg"
+  },
+  {
+    "id": 35,
+    "name": "Prof. Pravin Chandra Trivedi",
+    "honors": "",
+    "affiliation": "Former Vice-Chancellor (JNVU Jodhpur; DDU Gorakhpur; MGSU Bikaner)",
+    "image": "pct.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Dr. Shakti Vinay Shukla",
+    "honors": "",
+    "affiliation": "Director, Flavour and Fragrance Development Centre, Kanauj, Uttar Pradesh",
+    "image": "svs.jpg"
   },
   {
     "id": 22,
     "name": "Prof. S. R. Yadav",
-    "honors": "FNA",
+    "honors": "FNA FNASc",
     "affiliation": "Shivaji University, Kolhapur",
     "image": "sry.png"
   },
@@ -163,7 +212,7 @@
   {
     "id": 24,
     "name": "Prof. Rup Lal",
-    "honors": "FNA FASc FNASc FNAAS",
+    "honors": "FNA FNASc FNAAS",
     "affiliation": "INSA Senior Scientist; Professor (Retd.), Dept. of Zoology, University of Delhi",
     "image": "rl.jpg"
   },
@@ -182,32 +231,11 @@
     "image": "rus.png"
   },
   {
-    "id": 27,
-    "name": "Dr. Subhash Ashutosh IFS",
-    "honors": "",
-    "affiliation": "Co‑Chairman & Director, CoE‑NRMSL, Govt. of Meghalaya; Former Director General, Forest Survey of India",
-    "image": "sa.jpg"
-  },
-  {
-    "id": 28,
-    "name": "Shri Harish Chaudhury IFS",
-    "honors": "",
-    "affiliation": "Principal Chief Conservator of Forests, Meghalaya",
-    "image": "hc.png"
-  },
-  {
-    "id": 29,
-    "name": "Dr. Arun K. Sharma",
-    "honors": "",
-    "affiliation": "Director General, NECTAR, Department of Science & Technology, Govt. of India",
-    "image": "aksh.jpg"
-  },
-  {
-    "id": 30,
-    "name": "Dr. A. A. Mao",
-    "honors": "FNASc",
-    "affiliation": "Former Director, Botanical Survey of India",
-    "image": "aam.jpg"
+    "id": 38,
+    "name": "Dr. Dalip K. Upreti",
+    "honors": "FNA FNASc",
+    "affiliation": "CSIR Emeritus Scientist, CSIR-NBRI, Lucknow",
+    "image": "dku.png"
   },
   {
     "id": 31,
@@ -215,6 +243,13 @@
     "honors": "FNASc FNAAS",
     "affiliation": "Former Professor, Osmania University",
     "image": "cm.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Prof. S. P. S. Kushwaha",
+    "honors": "FNASc",
+    "affiliation": "Former Dean, Indian Institute of Remote Sensing Dehradun",
+    "image": "spsk.jpg"
   },
   {
     "id": 32,
@@ -229,27 +264,6 @@
     "honors": "FNAAS",
     "affiliation": "Former Chief Scientist, CSIR-CIMAP",
     "image": "rp.jpg"
-  },
-  {
-    "id": 34,
-    "name": "Prof. S. P. S. Kushwaha",
-    "honors": "",
-    "affiliation": "Former Dean, Indian Institute of Remote Sensing Dehradun",
-    "image": "spsk.jpg"
-  },
-  {
-    "id": 35,
-    "name": "Prof. Pravin Chandra Trivedi",
-    "honors": "",
-    "affiliation": "Former Vice-Chancellor (JNVU Jodhpur; DDU Gorakhpur; MGSU Bikaner)",
-    "image": "pct.jpg"
-  },
-  {
-    "id": 36,
-    "name": "Dr. Shakti Vinay Shukla",
-    "honors": "",
-    "affiliation": "Director, Flavour and Fragrance Development Centre, Kanauj, Uttar Pradesh",
-    "image": "svs.jpg"
   },
   {
     "id": 37,
@@ -348,5 +362,47 @@
     "honors": "",
     "affiliation": "Professor, Dept. of Botany, Nagaland University, Lumami",
     "image": "jsp.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Dr. A. P. Sane",
+    "honors": "",
+    "affiliation": "Chief Scientist, CSIR-NBRI, Lucknow",
+    "image": "aps.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Dr. Sharad K. Srivastava",
+    "honors": "",
+    "affiliation": "Chief Scientist, CSIR-NBRI, Lucknow",
+    "image": "sks.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Dr. Rajnish K. Chaturvedi",
+    "honors": "",
+    "affiliation": "Chief Scientist, CSIR-IITR, Lucknow",
+    "image": "rc.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Dr. S. N. Jena",
+    "honors": "",
+    "affiliation": "Senior Principal Scientist, CSIR-NBRI, Lucknow",
+    "image": "snj.png"
+  },
+  {
+    "id": 57,
+    "name": "Dr. Aditya Abha Singh",
+    "honors": "",
+    "affiliation": "Assistant Professor, Botany, University of Lucknow",
+    "image": "aas.png"
+  },
+  {
+    "id": 56,
+    "name": "Bipasha Bhattacharjee",
+    "honors": "",
+    "affiliation": "Postdoctoral Scientist, Czech Academy of Sciences, Prague, Czech Republic",
+    "image": "bb.png"
   }
 ]

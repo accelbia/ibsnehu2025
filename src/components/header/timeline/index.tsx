@@ -13,7 +13,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-
+import DownloadIcon from '@mui/icons-material/Download';
 // Register the SplitText plugin
 gsap.registerPlugin(SplitText);
 
@@ -581,6 +581,17 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
                 </p>
               </li>
             </ul>
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <a
+              className='button'
+              href='/Pre and Post Conference Event Brochure.pdf'
+              target='_blank'
+            >
+              Download
+              <DownloadIcon />
+            </a>
           </div>
         </div>
       </div>
