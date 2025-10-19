@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           <a href='https://accelbia.design' target='_blank' rel='noopener noreferrer'>
             accelbia.design
           </a> */}
-          <p>Last update: {formatDate(lastUpdate)}</p>
+          Last update: {formatDate(lastUpdate)}
         </p>
       </div>
     </footer>

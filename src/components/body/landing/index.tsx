@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import TimelineModal from '../../header/timeline'; // Import the Timeline component
+import AcceptedAbstractsInstructions from '../accepted-abstracts-instructions';
 import './index.css';
 
 interface LandingProps {
@@ -13,6 +14,8 @@ const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
   const [timeRemaining, setTimeRemaining] = useState<string>('');
   const [secondsRemaining, setSecondsRemaining] = useState<string>('');
   const [isTimelineVisible, setIsTimelineVisible] = useState<boolean>(false); // State for Timeline visibility
+  const [isAbstractAndInstructionsVisible, setIsAbstractAndInstructionsVisible] =
+    useState<boolean>(false);
 
   const countDownToConference = () => {
     const conferenceDate = new Date('2025-10-30T09:00:00');
@@ -91,6 +94,12 @@ const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
         >
           Detailed Program Schedule
         </a>
+        <a
+          href='#accepted-abstracts-and-instructions'
+          onClick={() => setIsAbstractAndInstructionsVisible(true)}
+        >
+          Accepted Abstracts and Instructions
+        </a>
       </div>
       <span className='countdown'>{timeRemaining}</span>
       <span className='seconds-remaining'>{secondsRemaining}</span>
@@ -106,6 +115,11 @@ const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
 
       {/* Render the Timeline modal */}
       <TimelineModal isVisible={isTimelineVisible} setIsVisible={setIsTimelineVisible} />
+      {/* Render the Abstracts and Instructions modal */}
+      <AcceptedAbstractsInstructions
+        isVisible={isAbstractAndInstructionsVisible}
+        setIsVisible={setIsAbstractAndInstructionsVisible}
+      />
     </div>
   );
 };
