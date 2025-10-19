@@ -1,19 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import CloseIcon from '@mui/icons-material/Close';
-import LaunchIcon from '@mui/icons-material/Launch';
 import { IconButton } from '@mui/material';
 import './index.css';
-
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import DownloadIcon from '@mui/icons-material/Download';
 // Register the SplitText plugin
 gsap.registerPlugin(SplitText);
 
