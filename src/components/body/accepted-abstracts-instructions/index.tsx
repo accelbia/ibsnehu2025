@@ -148,16 +148,16 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
               <tr>
                 <td>1</td>
                 <td>Mycology, Microbiology and Plant Pathology</td>
-                <td>14</td>
-                <td>18</td>
+                <td>15</td>
+                <td>17</td>
                 <td>32</td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Algae, Bryophytes and Pteridophytes Seed</td>
-                <td>14</td>
-                <td>11</td>
-                <td>25</td>
+                <td>17</td>
+                <td>10</td>
+                <td>27</td>
               </tr>
               <tr>
                 <td>3</td>
@@ -169,23 +169,23 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
               <tr>
                 <td>4</td>
                 <td>Seed Plants: Taxonomy, Ethnobotany and Plant Resource Utilization</td>
-                <td>14</td>
+                <td>15</td>
                 <td>29</td>
-                <td>43</td>
+                <td>44</td>
               </tr>
               <tr>
                 <td>5</td>
                 <td>Cytogenetics, Plant Breeding and Molecular Biology</td>
-                <td>15</td>
-                <td>0</td>
+                <td>13</td>
+                <td>2</td>
                 <td>15</td>
               </tr>
               <tr>
                 <td>6</td>
                 <td>Ecology and Environmental Biology</td>
-                <td>15</td>
-                <td>19</td>
-                <td>34</td>
+                <td>18</td>
+                <td>18</td>
+                <td>36</td>
               </tr>
               <tr>
                 <td>7</td>
@@ -198,8 +198,8 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
                 <td>8</td>
                 <td>Plant Biotechnology</td>
                 <td>15</td>
-                <td>12</td>
-                <td>27</td>
+                <td>13</td>
+                <td>28</td>
               </tr>
               <tr>
                 <th colSpan={5}>Special Sections</th>
@@ -214,8 +214,8 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
                   India (SS-1)
                 </td>
                 <td>13</td>
-                <td>2</td>
-                <td>15</td>
+                <td>4</td>
+                <td>17</td>
               </tr>
               <tr>
                 <td>2</td>
@@ -227,30 +227,36 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
               <tr>
                 <th></th>
                 <th>Total</th>
-                <th>130</th>
-                <th>117</th>
-                <th>247</th>
+                <th>136</th>
+                <th>119</th>
+                <th>255</th>
               </tr>
             </tbody>
           </table>
           <p>
             For full list of accepted abstracts,{' '}
             <a
-              href='/Registered List of Participants.pdf'
+              href='/List of Accepted Abstracts - IBS NEHU 2025.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
               click here!
             </a>
           </p>
-          <h2>B. Award Lectures</h2>
-          <p>Number of lectures: 06 (40 minutes each)</p>
-          <h2>C. Plenary Lectures</h2>
-          <p>Number of lectures: 11 (40 minutes each)</p>
-          <h2>D. Lead Talks</h2>
-          <p>Number of talks: 23 (15 minutes each)</p>
-          <h2>E. Special Section Lead Talks</h2>
+          <h2>B. Presidential Address</h2>
+          <p>Number of addresses: 1</p>
+          <h2>C. Award Lectures</h2>
+          <p>Number of lectures: 6 (40 minutes each)</p>
+          <h2>D. Plenary Talks</h2>
+          <p>Number of talks: 11 (40 minutes each)</p>
+          <h2>E. Lead Speakers</h2>
           <p>Number of talks: 20 (15 minutes each)</p>
+          <h2>F. Special Lead Lectures</h2>
+          <p>Number of lectures: 3 (15 minutes each)</p>
+          <h2>G. Oral Presentations</h2>
+          <p>Number of presentations: 136</p>
+          <h2>H. Poster Presentations</h2>
+          <p>Number of presentations: 119</p>
           <h1 ref={headingRef}>Instructions</h1>
           <ul className='instructions-list'>
             <li>Size of the poster: 3 ft width x 4 ft length</li>

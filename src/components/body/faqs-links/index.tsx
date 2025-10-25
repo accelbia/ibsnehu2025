@@ -136,9 +136,19 @@ const FAQsLinks = ({
               <CarIcon fontSize='small' style={{ marginRight: '5px' }} />
               Transport Arrangement from Guwahati
             </a>
+            <p className='transport-caption'>
+              <a
+                href='mailto:bajpaienviro@gmail.com,secretariat@ibsnehu2025.org?subject=Arrival at Guwahati'
+                style={{ color: '#ff6b35' }}
+              >
+                Participants are advised to intimate to bajpaienviro@gmail.com their arrival date
+                and time at Guwahati Railway Station/Airport to facilitate transport arrangement to
+                Shillong.
+              </a>
+            </p>
           </div>
-          <div className='link-item coming-soon'>
-            <a className='link'>
+          <div className='link-item new'>
+            <a className='link' href='/Accommodation Compiled - IBS NEHU 2025.pdf' target='_blank'>
               <HotelIcon fontSize='small' style={{ marginRight: '5px' }} />
               Accommodation Allotment
             </a>

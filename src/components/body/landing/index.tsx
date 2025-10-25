@@ -97,6 +97,7 @@ const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
         <a
           href='#accepted-abstracts-and-instructions'
           onClick={() => setIsAbstractAndInstructionsVisible(true)}
+          className='updated-header'
         >
           Accepted Abstracts and Instructions
         </a>

@@ -12,5 +12,26 @@
     "honors": "",
     "affiliation": "Director, North-East Space Applications Centre (ISRO), Shillong",
     "image": "spag.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Dr. Rajnish K. Chaturvedi",
+    "honors": "",
+    "affiliation": "Chief Scientist, CSIR-IITR, Lucknow",
+    "image": "rc.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Prof. Rup Lal",
+    "honors": "FNA FNASc FNAAS",
+    "affiliation": "INSA Senior Scientist; Professor (Retd.), Dept. of Zoology, University of Delhi",
+    "image": "rl.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Prof. Madhoolika Agarwal",
+    "honors": "FNA FNASc FNAAS",
+    "affiliation": "Former Dean, Institute of Science, Banaras Hindu University (BHU)",
+    "image": "ma.jpg"
   }
 ]
