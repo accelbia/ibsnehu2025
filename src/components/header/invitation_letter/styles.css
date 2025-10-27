@@ -1,0 +1,19 @@
+.invitation-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.invitation-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.invitation-links a:hover {
+  text-decoration: underline;
+  transform: translate(2px, 0px);
+}

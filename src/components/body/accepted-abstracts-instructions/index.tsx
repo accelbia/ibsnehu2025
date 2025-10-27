@@ -156,8 +156,8 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
                 <td>2</td>
                 <td>Algae, Bryophytes and Pteridophytes Seed</td>
                 <td>17</td>
-                <td>10</td>
-                <td>27</td>
+                <td>11</td>
+                <td>28</td>
               </tr>
               <tr>
                 <td>3</td>
@@ -197,9 +197,9 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
               <tr>
                 <td>8</td>
                 <td>Plant Biotechnology</td>
-                <td>15</td>
+                <td>16</td>
                 <td>13</td>
-                <td>28</td>
+                <td>29</td>
               </tr>
               <tr>
                 <th colSpan={5}>Special Sections</th>
@@ -213,9 +213,9 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
                   Biology of Plant diversity for Bioeconomy with special reference to North-East
                   India (SS-1)
                 </td>
-                <td>13</td>
+                <td>14</td>
                 <td>4</td>
-                <td>17</td>
+                <td>18</td>
               </tr>
               <tr>
                 <td>2</td>
@@ -227,9 +227,9 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
               <tr>
                 <th></th>
                 <th>Total</th>
-                <th>136</th>
-                <th>119</th>
-                <th>255</th>
+                <th>138</th>
+                <th>120</th>
+                <th>258</th>
               </tr>
             </tbody>
           </table>
@@ -250,13 +250,9 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
           <h2>D. Plenary Talks</h2>
           <p>Number of talks: 11 (40 minutes each)</p>
           <h2>E. Lead Speakers</h2>
-          <p>Number of talks: 20 (15 minutes each)</p>
+          <p>Number of talks: 21 (15 minutes each)</p>
           <h2>F. Special Lead Lectures</h2>
-          <p>Number of lectures: 3 (15 minutes each)</p>
-          <h2>G. Oral Presentations</h2>
-          <p>Number of presentations: 136</p>
-          <h2>H. Poster Presentations</h2>
-          <p>Number of presentations: 119</p>
+          <p>Number of lectures: 5 (15 minutes each)</p>
           <h1 ref={headingRef}>Instructions</h1>
           <ul className='instructions-list'>
             <li>Size of the poster: 3 ft width x 4 ft length</li>

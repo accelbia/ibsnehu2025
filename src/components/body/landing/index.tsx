@@ -88,9 +88,11 @@ const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
           Distinguished Speakers
         </a>
         <a
-          href='#program-schedule'
+          href='/Programme Schedule - IBS NEHU 2025.pdf'
           onClick={() => setIsTimelineVisible(true)}
-          className='coming-soon-header'
+          className='updated-header'
+          target='_blank'
+          rel='noopener noreferrer'
         >
           Detailed Program Schedule
         </a>

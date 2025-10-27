@@ -44,7 +44,7 @@
   transform: none;
 }
 
-.link-item.coming-soon .transport-caption {
+.link-item .transport-caption {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 600; /* Thin */
   color: #ff6b35;
