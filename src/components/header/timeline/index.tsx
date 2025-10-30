@@ -200,8 +200,12 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
               <TimelineContent>
                 <h3 className='timelineTitle'>Pre-conference Event Registration Closes</h3>
                 <p className='timelineContent'>
-                  {preConferenceTime.days} days, {preConferenceTime.hours} hours,{' '}
-                  {preConferenceTime.minutes} minutes, {preConferenceTime.seconds} seconds remaining
+                  {preConferenceTime.days === 0 &&
+                  preConferenceTime.hours === 0 &&
+                  preConferenceTime.minutes === 0 &&
+                  preConferenceTime.seconds === 0
+                    ? 'Registration closed'
+                    : `${preConferenceTime.days} days, ${preConferenceTime.hours} hours, ${preConferenceTime.minutes} minutes, ${preConferenceTime.seconds} seconds remaining`}
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -338,9 +342,12 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
               <TimelineContent>
                 <h3 className='timelineTitle'>Post-conference Event Registration Closes</h3>
                 <p className='timelineContent'>
-                  {postConferenceTime.days} days, {postConferenceTime.hours} hours,{' '}
-                  {postConferenceTime.minutes} minutes, {postConferenceTime.seconds} seconds
-                  remaining
+                  {postConferenceTime.days === 0 &&
+                  postConferenceTime.hours === 0 &&
+                  postConferenceTime.minutes === 0 &&
+                  postConferenceTime.seconds === 0
+                    ? 'Registration closed'
+                    : `${postConferenceTime.days} days, ${postConferenceTime.hours} hours, ${postConferenceTime.minutes} minutes, ${postConferenceTime.seconds} seconds remaining`}
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -407,8 +414,7 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
                   <strong>Welcome and Training Report:</strong> Prof. S. K. Barik, Dean, School of
                   Life Sciences, NEHU
                   <br />
-                  <strong>Presidential Remark:</strong> Dr. K. K. Sharma, Group Head, Remote Sensing
-                  Applications Group, NESAC
+                  <strong>Presidential Remark:</strong> Prof. Mukund Behera, IIT Kharagpur
                   <br />
                   <strong>Address by the Chief Guest:</strong> Prof. P. S. Roy{' '}
                   <span className='honors'>FNASc FNAAS</span>, Former Director, Indian Institute of
