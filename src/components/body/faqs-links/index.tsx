@@ -143,7 +143,7 @@ const FAQsLinks = ({
               Sight Seeing Arrangement
             </a>
           </div>
-          <div className='link-item new'>
+          <div className='link-item'>
             <a className='link' href='/docs/Transport Schedule - IBS NEHU 2025.pdf' target='_blank'>
               <CarIcon fontSize='small' style={{ marginRight: '5px' }} />
               Transport Arrangement from Guwahati
@@ -159,7 +159,7 @@ const FAQsLinks = ({
               </a>
             </p>
           </div>
-          <div className='link-item new'>
+          <div className='link-item'>
             <a
               className='link'
               href='/docs/Accommodation Arrangement - IBS NEHU 2025.pdf'
