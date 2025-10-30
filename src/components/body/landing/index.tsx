@@ -88,7 +88,7 @@ const Landing: React.FC<LandingProps> = ({ setBodyVariant }) => {
           Distinguished Speakers
         </a>
         <a
-          href='/Programme Schedule - IBS NEHU 2025.pdf'
+          href='/docs/Programme Schedule - IBS NEHU 2025.pdf'
           onClick={() => setIsTimelineVisible(true)}
           className='updated-header'
           target='_blank'

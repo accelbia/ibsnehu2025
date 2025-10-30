@@ -8,9 +8,11 @@ import BadgeIcon from '@mui/icons-material/Badge';
 import FellowShipIcon from '@mui/icons-material/School';
 import ContactIcon from '@mui/icons-material/ContactMail';
 import FlowerIcon from '@mui/icons-material/LocalFlorist';
+import PersonIcon from '@mui/icons-material/Person';
 import React from 'react';
 import Contact from './contact';
 import SightSeeing from './sight-seeing';
+import Membership from '../../header/membership';
 
 interface FAQsLinksProps {
   setBodyVariant: React.Dispatch<
@@ -28,12 +30,16 @@ const FAQsLinks = ({
 }: FAQsLinksProps) => {
   const [displayContact, setDisplayContact] = React.useState(false);
   const [displaySightSeeing, setDisplaySightSeeing] = React.useState(false);
+  const [displayMembership, setDisplayMembership] = React.useState(false);
 
   return (
     <>
       {displayContact && <Contact isVisible={displayContact} setIsVisible={setDisplayContact} />}
       {displaySightSeeing && (
         <SightSeeing isVisible={displaySightSeeing} setIsVisible={setDisplaySightSeeing} />
+      )}
+      {displayMembership && (
+        <Membership isVisible={displayMembership} setIsVisible={setDisplayMembership} />
       )}
       <div className='faq-links-container'>
         <div className='faq-container'>
@@ -91,6 +97,12 @@ const FAQsLinks = ({
         <div className='links-container'>
           <h1 className='heading'>Important Links</h1>
           <div className='link-item'>
+            <a className='link' onClick={() => setDisplayMembership(true)}>
+              <PersonIcon fontSize='small' style={{ marginRight: '5px' }} />
+              IBS Membership
+            </a>
+          </div>
+          <div className='link-item'>
             <a href='https://forms.cloud.microsoft/r/G8UMm1RdEx' target='_blank' className='link'>
               <ExternalLinkIcon fontSize='small' style={{ marginRight: '5px' }} />
               Conference/International Symposium Registration
@@ -132,7 +144,7 @@ const FAQsLinks = ({
             </a>
           </div>
           <div className='link-item new'>
-            <a className='link' href='/Transport Schedule - IBS NEHU 2025.pdf' target='_blank'>
+            <a className='link' href='/docs/Transport Schedule - IBS NEHU 2025.pdf' target='_blank'>
               <CarIcon fontSize='small' style={{ marginRight: '5px' }} />
               Transport Arrangement from Guwahati
             </a>
@@ -150,7 +162,7 @@ const FAQsLinks = ({
           <div className='link-item new'>
             <a
               className='link'
-              href='/Accommodation Arrangement - IBS NEHU 2025.pdf'
+              href='/docs/Accommodation Arrangement - IBS NEHU 2025.pdf'
               target='_blank'
             >
               <HotelIcon fontSize='small' style={{ marginRight: '5px' }} />

@@ -236,7 +236,7 @@ const AcceptedAbstractsInstructions: React.FC<AcceptedAbstractsInstructionsProps
           <p>
             For full list of accepted abstracts,{' '}
             <a
-              href='/List of Accepted Abstracts - IBS NEHU 2025.pdf'
+              href='/docs/List of Accepted Abstracts - IBS NEHU 2025.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >

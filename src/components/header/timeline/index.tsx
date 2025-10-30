@@ -586,7 +586,7 @@ const TimelineModal: React.FC<TimelineModalProps> = ({ isVisible, setIsVisible }
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <a
               className='button'
-              href='/Pre and Post Conference Event Brochure.pdf'
+              href='/docs/Pre and Post Conference Event Brochure.pdf'
               target='_blank'
             >
               Download

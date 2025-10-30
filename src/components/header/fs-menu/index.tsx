@@ -11,14 +11,14 @@ interface FsMenuProps {
   displayInvitation: boolean;
   setDisplayInvitation: (value: boolean) => void;
 
-  displayMembership: boolean;
-  setDisplayMembership: (value: boolean) => void;
-
   displayOfficeBearers: boolean;
   setDisplayOfficeBearers: (value: boolean) => void;
 
   displayTimeline: boolean;
   setDisplayTimeline: (value: boolean) => void;
+
+  displaySponsors: boolean;
+  setDisplaySponsors: (value: boolean) => void;
 }
 
 const FsMenu: React.FC<FsMenuProps> = ({
@@ -26,10 +26,10 @@ const FsMenu: React.FC<FsMenuProps> = ({
   setDisplayMenu,
   displayInvitation,
   setDisplayInvitation,
-  displayMembership,
-  setDisplayMembership,
   displayTimeline,
   setDisplayTimeline,
+  displaySponsors,
+  setDisplaySponsors,
 }) => {
   if (!displayMenu) return null;
   return (
@@ -62,11 +62,11 @@ const FsMenu: React.FC<FsMenuProps> = ({
           <li>
             <a
               onClick={() => {
-                setDisplayMembership(!displayMembership);
+                setDisplaySponsors(!displaySponsors);
                 setDisplayMenu(false);
               }}
             >
-              IBS Membership
+              Co-organizers and Sponsors
             </a>
           </li>
           <li>

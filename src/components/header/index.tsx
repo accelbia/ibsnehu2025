@@ -9,9 +9,6 @@ interface HeaderProps {
   displayInvitation: boolean;
   setDisplayInvitation: (value: boolean) => void;
 
-  displayMembership: boolean;
-  setDisplayMembership: (value: boolean) => void;
-
   displayOfficeBearers: boolean;
   setDisplayOfficeBearers: (value: boolean) => void;
 
@@ -20,19 +17,22 @@ interface HeaderProps {
 
   displayTimeline: boolean; // New prop for Timeline visibility
   setDisplayTimeline: (value: boolean) => void; // New prop for Timeline visibility
+
+  displaySponsors: boolean; // New prop for Sponsors visibility
+  setDisplaySponsors: (value: boolean) => void; // New prop for Sponsors visibility
 }
 
 const Header: React.FC<HeaderProps> = ({
   displayInvitation,
   setDisplayInvitation,
-  displayMembership,
-  setDisplayMembership,
   displayOfficeBearers,
   setDisplayOfficeBearers,
   displayMenu,
   setDisplayMenu,
   displayTimeline,
   setDisplayTimeline,
+  displaySponsors,
+  setDisplaySponsors,
 }) => {
   return (
     <header>
@@ -53,8 +53,8 @@ const Header: React.FC<HeaderProps> = ({
             </a>
           </li>
           <li>
-            <a className='navButton' onClick={() => setDisplayMembership(!displayMembership)}>
-              IBS Membership
+            <a className='navButton' onClick={() => setDisplaySponsors(!displaySponsors)}>
+              Co-organizers and Sponsors
             </a>
           </li>
           <li>
@@ -82,12 +82,12 @@ const Header: React.FC<HeaderProps> = ({
         setDisplayMenu={setDisplayMenu}
         displayInvitation={displayInvitation}
         setDisplayInvitation={setDisplayInvitation}
-        displayMembership={displayMembership}
-        setDisplayMembership={setDisplayMembership}
         displayOfficeBearers={displayOfficeBearers}
         setDisplayOfficeBearers={setDisplayOfficeBearers}
         displayTimeline={displayTimeline}
         setDisplayTimeline={setDisplayTimeline}
+        displaySponsors={displaySponsors}
+        setDisplaySponsors={setDisplaySponsors}
       />
     </header>
   );

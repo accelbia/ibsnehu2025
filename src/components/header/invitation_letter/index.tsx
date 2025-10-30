@@ -124,17 +124,17 @@ const InvitationLetter: React.FC<InvitationLetterProps> = ({ isVisible, setIsVis
           }}
           className='invitation-links'
         >
-          <a href='/Remote Sensing Training Invitation.pdf' target='_blank'>
+          <a href='/docs/Valedictory Function Invitation - IBS NEHU 2025.pdf' target='_blank'>
             <DocumentIcon />
-            Remote Sensing Training Invitation
+            Valedictory Function Invitation
           </a>
-          <a href='/RS Tripathi Memorial Lecture Invitation.pdf' target='_blank'>
+
+          <a
+            href='/docs/Post-Conference Concluding Session Invitation - IBS NEHU 2025.pdf'
+            target='_blank'
+          >
             <DocumentIcon />
-            RS Tripathi Memorial Lecture Invitation
-          </a>
-          <a href='/Inaugural Ceremony Invitation.pdf' target='_blank'>
-            <DocumentIcon />
-            Inaugural Ceremony Invitation
+            Post-Conference Concluding Session Invitation
           </a>
         </div>
 
