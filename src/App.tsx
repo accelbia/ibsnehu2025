@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/header';
 import Body from './components/body';
 import Footer from './components/footer';
@@ -9,6 +9,7 @@ import TimelineModal from './components/header/timeline';
 import FsMenu from './components/header/fs-menu';
 import Fellowship from './components/body/fellowship';
 import SponsorsModal from './components/header/sponsors-modal';
+import DeveloperLetterModal from './components/DeveloperLetterModal';
 
 function App() {
   const [displayInvitation, setDisplayInvitation] = useState(false);
@@ -17,6 +18,15 @@ function App() {
   const [displayTimeline, setDisplayTimeline] = useState(false);
   const [displayFellowship, setDisplayFellowship] = useState(false);
   const [displaySponsors, setDisplaySponsors] = useState(false);
+  const [displayDeveloperLetter, setDisplayDeveloperLetter] = useState(false);
+
+  useEffect(() => {
+    // Show the modal after a short delay for better UX
+    const timer = setTimeout(() => {
+      setDisplayDeveloperLetter(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -36,6 +46,10 @@ function App() {
       <TimelineModal isVisible={displayTimeline} setIsVisible={setDisplayTimeline} />
       <SponsorsModal isVisible={displaySponsors} setIsVisible={setDisplaySponsors} />
       <Fellowship isVisible={displayFellowship} setIsVisible={setDisplayFellowship} />
+      <DeveloperLetterModal
+        isVisible={displayDeveloperLetter}
+        setIsVisible={setDisplayDeveloperLetter}
+      />
 
       <FsMenu
         displayMenu={displayMenu}
